@@ -1,70 +1,43 @@
 # Exam Seating Allocation System – Project Documentation
 
-> *Prepared for evaluation/viva. All explanations are written as if I’m presenting the project to a reviewer.*
-
----
-
 ## 1. Project Overview
-
-| Aspect | Description |
-|--------|-------------|
-| **Purpose** | A full-stack **MERN** web application that automatically generates exam-room seating plans for a large cohort of students. It reads a student roster, interleaves students by department, and assigns them to halls using a column-wise zig-zag algorithm. |
-| **Problem it solves** | Manual seat-allocation for hundreds of students is error-prone, time-consuming, and often leads to clustering of students from the same department (increasing cheating risk). The system guarantees a balanced distribution, saves the plan in a database, and provides printable PDFs (hall list, door signage, student slips with QR codes). |
-| **Target users** | - University exam administrators (primary users) <br> - Faculty staff who need to publish seating charts <br> - Students (indirectly, via the generated QR-coded slips) |
-| **Real-world use case** | A university schedules a mid-term exam for 500 students across 10 halls. The admin logs in, uploads the student list (`.txt` or `.xlsx`), clicks **Generate Allocation**, and instantly receives a visual grid for each hall plus downloadable PDFs for printing. No spreadsheets or manual shuffling needed. |
+A professional MERN-stack application for automated exam seating. It uses a high-performance **Column-Wise Zig-Zag Interleaving Algorithm** to distribute students across multiple halls while ensuring departmental separation.
 
 ---
 
-## 2. Project Flow (Step-by-Step)
+## 2. Main Sections
 
-1. **Secure Access** – Login at `/login` with credentials. The system uses **JWT** for session management and protects all administrative routes.
-2. **Dynamic Dashboard** – Upon login, the **Mission Control** dashboard displays real-time statistics: Total Students, Available Halls, and Active Exams.
-3. **Data Ingestion** – Admin uploads a `.txt` or `.xlsx` roster. The backend uses a high-performance **bulk upsert** strategy to ensure data integrity and prevent duplicate roll number errors.
-4. **Allocation Generation** – Admin enters an Exam ID and executes the **Column-Wise Zig-Zag Algorithm**.
-   - **Step A**: Students are interleaved by department using a round-robin strategy to maximize separation.
-   - **Step B**: Seats are filled column-by-column, alternating directions (top-to-bottom vs. bottom-to-top) to optimize room flow.
-   - **Step C**: A unique **QR Code** is generated for every single seat, containing student and exam metadata.
-5. **Seating Archive** – Once generated, allocations are stored permanently. They can be retrieved via the **Seating Grids** sidebar link, which lists all active exams.
-6. **Visual Verification** – The Seating View shows a live interactive grid. Each cell displays the **Student Roll Number** for immediate verification.
-7. **Export & Print** – One-click PDF generation for:
-   - **Hall Lists**: Tabular reports for invigilators.
-   - **Door Signage**: Large-format hall headers.
-   - **Student Slips**: Individual slips with QR codes for student identification.
+### A. Mission Control (Dashboard)
+- **Real-time Stats**: Dynamic tracking of total students, halls, and active exams.
+- **Recent Activity**: Quick links to the most recent allocations.
+- **Orchestration**: Initialize new allocations by entering an Exam ID.
 
----
+### B. Data Ingestion
+- **Bulk Upload**: Support for `.txt` and `.xlsx` rosters.
+- **Validation**: Automatic duplicate detection and field validation.
+- **Data Safety**: Uses atomic bulk-write operations to ensure integrity.
 
-## 3. Key Features and Logic
+### C. Manage Allocations (The Archive)
+- **Search & Filter**: Browse through all historical exam allocations.
+- **Management**: Dedicated **View** and **Delete** actions for every record.
+- **Resilience**: Allocations are permanently stored and can be retrieved instantly.
 
-### 3.1 Zig-Zag Seating Logic
-The algorithm iterates through columns first. If the column index is even, it fills from the bottom up; if odd, from the top down. This ensures that students entering the hall follow a clear, organized path without bottlenecks.
-
-### 3.2 Department Interleaving
-To prevent cheating, the system ensures that students sitting next to each other are from different departments. It achieves this by grouping students by department and then merging them into a single list using a round-robin pattern before assigning seats.
-
-### 3.3 Dynamic Dashboard
-Unlike static dashboards, this system queries the database in real-time to show:
-- Actual student population.
-- True hall capacity and availability.
-- A list of recent allocations for quick one-click navigation.
+### D. Seating View (Interactive Grid)
+- **Visual Grid**: Interactive room layout showing **Student Roll Numbers**.
+- **Reports**: One-click generation of PDF Hall Lists, Door Signage, and Student Slips with **QR Codes**.
+- **Verification**: Built-in "Save to Archive" confirmation for peace of mind.
 
 ---
 
-## 4. Technologies Used
-
-- **Frontend**: React (Vite), Tailwind CSS (Premium Dark Theme), Redux Toolkit (RTK-Query), Lucide Icons, Recharts.
-- **Backend**: Node.js, Express, MongoDB (Mongoose), JWT (jsonwebtoken), Bcrypt (Security), Multer (File Handling).
-- **Reporting**: jsPDF, jspdf-autotable, qrcode (QR Generation).
+## 3. Core Logic
+- **Interleaving**: Students from the same department are separated using a round-robin merging strategy.
+- **Zig-Zag Flow**: Seats are filled column-by-column, alternating directions (Top-to-Bottom / Bottom-to-Top) for optimal hall entry flow.
 
 ---
 
-## 5. My Contribution
+## 4. How to Run
+1. Start Backend: `cd backend && npm start`
+2. Start Frontend: `cd frontend && npm run dev`
+3. Login: `srinivas` / `12334`
 
-I delivered the full end-to-end solution, including:
-- **Algorithm Design**: The column-wise zig-zag interleaving engine.
-- **UI/UX**: A production-ready "Mission Control" dashboard inspired by modern apps like Stripe and Notion.
-- **Data Safety**: Robust regex parsing for legacy text files and atomic bulk writes for the database.
-- **Reporting**: Automated PDF generation suite with embedded QR codes.
-
----
-
-*Documentation updated: April 2026*
+*Documentation Version: 3.0 (Final Management Release)*

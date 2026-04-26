@@ -24,6 +24,11 @@ const { isAdmin } = require('./src/api-gateway/middleware/auth.middleware');
 
 app.use('/api/auth', authRoutes);
 app.use('/api/upload', uploadRoutes);
+
+// Explicit static routes for Express 5 compatibility
+app.get('/api/stats', isAdmin, allocationController.getSystemStats);
+app.get('/api/allocations/all', isAdmin, allocationController.getAllAllocations);
+
 app.use('/api/allocation', allocationRoutes);
 
 // Error Handling Middleware

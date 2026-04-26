@@ -8,5 +8,6 @@ router.get('/stats', isAdmin, allocationController.getSystemStats);
 router.get('/all', isAdmin, allocationController.getAllAllocations);
 router.post('/generate', isAdmin, allocationController.generateAllocation);
 router.get('/:examId', isAdmin, allocationController.getAllocation);
+router.delete('/:examId', isAdmin, allocationController.deleteAllocation);
 
 module.exports = router;

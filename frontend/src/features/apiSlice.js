@@ -42,12 +42,19 @@ export const apiSlice = createApi({
       providesTags: ['Allocation'],
     }),
     getAllAllocations: builder.query({
-      query: () => '/allocation/all',
+      query: () => '/allocations/all',
       providesTags: ['Allocation'],
     }),
     getSystemStats: builder.query({
-      query: () => '/allocation/stats',
+      query: () => '/stats',
       providesTags: ['Allocation', 'Student', 'Hall'],
+    }),
+    deleteAllocation: builder.mutation({
+      query: (examId) => ({
+        url: `/allocation/${examId}`,
+        method: 'DELETE',
+      }),
+      invalidatesTags: ['Allocation'],
     }),
   }),
 });
@@ -59,4 +66,5 @@ export const {
   useGetAllocationQuery,
   useGetAllAllocationsQuery,
   useGetSystemStatsQuery,
+  useDeleteAllocationMutation,
 } = apiSlice;

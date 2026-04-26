@@ -30,7 +30,7 @@ const DashboardLayout = () => {
           </Link>
           <Link to="/seating" className="flex items-center space-x-3 p-3 rounded-lg hover:bg-slate-700 transition-colors">
             <Grid className="w-5 h-5 text-slate-400" />
-            <span>Seating Grids</span>
+            <span>Manage Allocations</span>
           </Link>
         </nav>
         <div className="p-4 border-t border-slate-700">

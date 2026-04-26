@@ -160,4 +160,14 @@ const getSystemStats = async (req, res) => {
   }
 };
 
-module.exports = { generateAllocation, getAllocation, getAllAllocations, getSystemStats };
+const deleteAllocation = async (req, res) => {
+  try {
+    const { examId } = req.params;
+    await SeatingAllocation.deleteMany({ examId });
+    res.status(200).json({ message: "Allocation deleted successfully" });
+  } catch (error) {
+    res.status(500).json({ message: "Failed to delete allocation", error: error.message });
+  }
+};
+
+module.exports = { generateAllocation, getAllocation, getAllAllocations, getSystemStats, deleteAllocation };
