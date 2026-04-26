@@ -1,0 +1,49 @@
+# EXAM SEATING ALLOCATION SYSTEM - RUN INSTRUCTIONS
+
+Follow these steps to get the project up and running on your local machine.
+
+## 1. Prerequisites
+- Ensure you have Node.js installed.
+- Ensure MongoDB is running on your system (or you have a valid MONGO_URI).
+
+## 2. Backend Setup
+1. Open a terminal and navigate to the backend folder:
+   cd backend
+2. Install dependencies:
+   npm install
+3. Configure Environment:
+   Open the '.env' file in the backend folder and ensure the following are set:
+   MONGO_URI=mongodb://localhost:27017/exam_seating_db
+   JWT_SECRET=your_secret_key_here
+   PORT=5000
+4. Seed the Database (Optional but recommended for first run):
+   node src/scripts/seed.js
+   (This creates a default admin, 10 halls, and 500 dummy students)
+5. Start the Server:
+   npm start
+   (The server will run at http://localhost:5000)
+
+## 3. Frontend Setup
+1. Open a NEW terminal window and navigate to the frontend folder:
+   cd frontend
+2. Install dependencies:
+   npm install
+3. Start the Development Server:
+   npm run dev
+4. Open the application:
+   Go to http://localhost:5173 in your browser.
+
+## 4. Default Credentials
+If you ran the seed script, use these to log in:
+- Admin ID: 17903
+- Password: 040807
+
+Alternatively, use the custom user we created:
+- Admin ID: srinivas
+- Password: 12334
+
+## 5. Basic Workflow
+1. Login with Admin credentials.
+2. Go to 'Data Ingestion' to upload your own student list (txt/xlsx).
+3. Go to 'Dashboard' to generate a new seating plan by entering an Exam ID.
+4. Go to 'Seating Grids' to view, verify, and export PDF reports.

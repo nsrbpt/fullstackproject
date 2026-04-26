@@ -8,320 +8,63 @@
 
 | Aspect | Description |
 |--------|-------------|
-| **Purpose** | A full‑stack **MERN** web application that automatically generates exam‑room seating plans for a large cohort of students. It reads a student roster, interleaves students by department, and assigns them to halls using a column‑wise zig‑zag algorithm. |
-| **Problem it solves** | Manual seat‑allocation for hundreds of students is error‑prone, time‑consuming, and often leads to clustering of students from the same department (increasing cheating risk). The system guarantees a balanced distribution, saves the plan in a database, and provides printable PDFs (hall list, door signage, student slips with QR codes). |
-| **Target users** | - University exam administrators (primary users) <br> - Faculty staff who need to publish seating charts <br> - Students (indirectly, via the generated QR‑coded slips) |
-| **Real‑world use case** | A university schedules a mid‑term exam for 500 students across 10 halls. The admin logs in, uploads the student list (`.txt` or `.xlsx`), clicks **Generate Allocation**, and instantly receives a visual grid for each hall plus downloadable PDFs for printing. No spreadsheets or manual shuffling needed. |
+| **Purpose** | A full-stack **MERN** web application that automatically generates exam-room seating plans for a large cohort of students. It reads a student roster, interleaves students by department, and assigns them to halls using a column-wise zig-zag algorithm. |
+| **Problem it solves** | Manual seat-allocation for hundreds of students is error-prone, time-consuming, and often leads to clustering of students from the same department (increasing cheating risk). The system guarantees a balanced distribution, saves the plan in a database, and provides printable PDFs (hall list, door signage, student slips with QR codes). |
+| **Target users** | - University exam administrators (primary users) <br> - Faculty staff who need to publish seating charts <br> - Students (indirectly, via the generated QR-coded slips) |
+| **Real-world use case** | A university schedules a mid-term exam for 500 students across 10 halls. The admin logs in, uploads the student list (`.txt` or `.xlsx`), clicks **Generate Allocation**, and instantly receives a visual grid for each hall plus downloadable PDFs for printing. No spreadsheets or manual shuffling needed. |
 
 ---
 
-## 2. Project Flow (Step‑by‑Step)
+## 2. Project Flow (Step-by-Step)
 
-1. **Login** – `POST /api/auth/login` with admin credentials. Server returns a JWT; the client stores it in `localStorage`.
-2. **Token validation** – Every protected route (`/api/upload/*`, `/api/allocation/*`) passes through `isAdmin` middleware, which verifies the JWT (`jwt.verify`).
-3. **Upload student roster** – UI (`Upload.jsx`) selects a `.txt` or `.xlsx` file. `useUploadStudentsMutation` sends `multipart/form-data` to `POST /api/upload/students`.
-4. **Backend parsing & upsert** (`upload.controller.js`)
-   - Detects file type.
-   - For `.txt`, splits lines and applies a regex to extract `rollNumber`, `name`, `department`.
-   - Validates required fields, removes duplicates, creates **bulk upsert** operations:
-     ```js
-     const ops = students.map(s => ({
-       updateOne: { filter: { rollNumber: s.rollNumber }, update: { $set: s }, upsert: true }
-     }));
-     await Student.bulkWrite(ops);
-     ```
-   - Returns `insertedCount` to the UI.
-5. **Generate allocation** – Dashboard button triggers `useGenerateAllocationMutation` → `POST /api/allocation/generate` with `{ examId }`.
-6. **Allocation engine** (`allocation.controller.js`)
-   - Loads all students, groups by `department`.
-   - Interleaves via round‑robin to create `mergedStudents`.
-   - Iterates each hall, filling seats column‑wise zig‑zag (odd columns top→bottom, even columns bottom→top).
-   - Generates a QR payload and converts it to a Data‑URL:
-     ```js
-     const qrPayload = JSON.stringify({ examId, studentId: stu._id, roll: stu.rollNumber, hall: hall.name, seat: seatNumber });
-     const qrCodeUrl = await QRCode.toDataURL(qrPayload);
-     ```
-   - Stores every seat in `SeatingAllocation` with `insertMany`.
-7. **Frontend retrieval** (`SeatingView.jsx`) – `useGetAllocationQuery(examId)` fetches allocations, populating `studentId` and `hallId`.
-8. **Render grid** – The UI builds a matrix per hall and renders a responsive CSS grid. Occupancy counters and seat numbers are shown.
-9. **Export PDFs** – Buttons call `pdfService` functions (`generateHallReport`, `generateDoorSignage`, `generateStudentSlips`). The service iterates the allocation data, builds tables with `jspdf`/`jspdf‑autotable`, and inserts QR images.
-10. **Result** – Admin obtains a visual grid, PDF hall list, door signage, and individual student slips ready for printing.
+1. **Secure Access** – Login at `/login` with credentials. The system uses **JWT** for session management and protects all administrative routes.
+2. **Dynamic Dashboard** – Upon login, the **Mission Control** dashboard displays real-time statistics: Total Students, Available Halls, and Active Exams.
+3. **Data Ingestion** – Admin uploads a `.txt` or `.xlsx` roster. The backend uses a high-performance **bulk upsert** strategy to ensure data integrity and prevent duplicate roll number errors.
+4. **Allocation Generation** – Admin enters an Exam ID and executes the **Column-Wise Zig-Zag Algorithm**.
+   - **Step A**: Students are interleaved by department using a round-robin strategy to maximize separation.
+   - **Step B**: Seats are filled column-by-column, alternating directions (top-to-bottom vs. bottom-to-top) to optimize room flow.
+   - **Step C**: A unique **QR Code** is generated for every single seat, containing student and exam metadata.
+5. **Seating Archive** – Once generated, allocations are stored permanently. They can be retrieved via the **Seating Grids** sidebar link, which lists all active exams.
+6. **Visual Verification** – The Seating View shows a live interactive grid. Each cell displays the **Student Roll Number** for immediate verification.
+7. **Export & Print** – One-click PDF generation for:
+   - **Hall Lists**: Tabular reports for invigilators.
+   - **Door Signage**: Large-format hall headers.
+   - **Student Slips**: Individual slips with QR codes for student identification.
 
 ---
 
-## 3. Features and Functionality
+## 3. Key Features and Logic
 
-| Feature | Description | Internal Mechanics | Sample Code |
-|---------|-------------|--------------------|------------|
-| **Admin Authentication** | Secure login for admins only. | JWT created with `jsonwebtoken`; `isAdmin` middleware checks `Authorization: Bearer <token>`. | ```js
-// middleware
-const isAdmin = (req,res,next)=>{ const token=req.headers.authorization?.split(' ')[1]; const decoded=jwt.verify(token,process.env.JWT_SECRET); req.userData=decoded; next(); }
-``` |
-| **Student Bulk Upload** | Upload `.txt` or `.xlsx` roster. | `multer` stores file in memory; controller parses, validates, then bulk upserts. | ```js
-const ops = students.map(s=>({updateOne:{filter:{rollNumber:s.rollNumber},update:{$set:s},upsert:true}}));
-await Student.bulkWrite(ops);
-``` |
-| **Column‑wise Zig‑Zag Allocation** | Seats are filled column‑by‑column, alternating direction. | For each hall, two nested loops: outer over columns, inner over rows with `step = (c%2===0?-1:1)`. | ```js
-for (let c=1;c<=cols;c++){
-  const start = c%2===0?rows:1;
-  const end   = c%2===0?1:rows;
-  const step  = c%2===0?-1:1;
-  for(let r=start; step===1? r<=end : r>=end; r+=step){ /* allocate */ }
-}
-``` |
-| **QR Code Generation** | Each seat gets a QR containing exam‑id, student‑id, roll, hall, seat. | `qrcode` library produces a Base64 PNG. The URL is stored in the allocation document. | ```js
-const qrPayload = JSON.stringify({examId, studentId:student._id, roll:student.rollNumber, hall:hall.name, seat:seatNumber});
-const qrCodeUrl = await QRCode.toDataURL(qrPayload);
-``` |
-| **Seating Grid UI** | Interactive, responsive visual representation of each hall. | React builds a `matrix` array, flattens it, and renders a CSS grid (`gridTemplateColumns: repeat(cols, 1fr)`). | ```jsx
-<div className="grid gap-1" style={{gridTemplateColumns: `repeat(${cols},1fr)`}}>
-  {matrix.flat().map((seat,i)=>(<div key={i} ...>{seat?seat.seatNumber:''}</div>))}
-</div>
-``` |
-| **PDF Export (Hall List, Door Signage, Student Slips)** | One‑click downloadable PDFs. | `jspdf` constructs a document, `jspdf-autotable` adds tables, QR images are added with `addImage`. | ```js
-const doc = new jsPDF();
-doc.autoTable({head: [header], body: rows});
-if (qr) doc.addImage(qr, 'PNG', x, y, w, h);
-doc.save(`${examId}_HallList.pdf`);
-``` |
-| **Seed Script** | Populate DB with sample halls, admin, and dummy students for testing. | Node script (`seed.js`) creates `Hall`, `AdminUser`, and a few `Student` documents, then exits. | ```js
-await Hall.create({name:'Hall 101',capacity:60,rows:10,cols:6});
-await AdminUser.create({email:'admin@example.com',password:bcrypt.hashSync('040807',10)});
-``` |
-| **Error Handling & Validation** | Prevent duplicate roll numbers, empty files, capacity overflow. | Throws `Error` with descriptive messages; frontend shows toast/message. | ```js
-if (data.length===0) return res.status(400).json({message:'Uploaded file is empty'});
-if (totalCapacity < students.length) throw new Error('Not enough seats');
-``` |
+### 3.1 Zig-Zag Seating Logic
+The algorithm iterates through columns first. If the column index is even, it fills from the bottom up; if odd, from the top down. This ensures that students entering the hall follow a clear, organized path without bottlenecks.
+
+### 3.2 Department Interleaving
+To prevent cheating, the system ensures that students sitting next to each other are from different departments. It achieves this by grouping students by department and then merging them into a single list using a round-robin pattern before assigning seats.
+
+### 3.3 Dynamic Dashboard
+Unlike static dashboards, this system queries the database in real-time to show:
+- Actual student population.
+- True hall capacity and availability.
+- A list of recent allocations for quick one-click navigation.
 
 ---
 
 ## 4. Technologies Used
 
-| Technology | Why Chosen | How It Is Used | Example |
-|------------|------------|----------------|---------|
-| **React (Vite)** | Fast HMR, component‑based UI, modern ecosystem. | UI pages (`Dashboard`, `SeatingView`, `Upload`). | `import { BrowserRouter as Router } from 'react-router-dom';` |
-| **Tailwind CSS** | Utility‑first styling, easy dark‑mode support, no CSS files to manage. | Class‑names embedded directly in JSX (e.g., `bg-white dark:bg-slate-800`). | `<div className="grid gap-1 p-4" style={{gridTemplateColumns: `repeat(${cols},1fr)`}}>` |
-| **Redux Toolkit Query (RTK‑Query)** | Data fetching + caching with minimal boilerplate. | Defines `login`, `uploadStudents`, `generateAllocation`, `getAllocation` endpoints. | ```js
-export const { useLoginMutation, useUploadStudentsMutation } = apiSlice;
-``` |
-| **Node.js + Express** | Simple, performant HTTP server; easy integration with MongoDB. | Handles `/api/auth`, `/api/upload`, `/api/allocation`. | `router.post('/generate', isAdmin, allocationController.generateAllocation);` |
-| **MongoDB + Mongoose** | Document store matches hierarchical data (students, halls, allocations). | Schemas for `Student`, `Hall`, `SeatingAllocation`. | ```js
-module.exports = mongoose.model('Hall', HallSchema);
-``` |
-| **jsonwebtoken** | Stateless authentication via JWT. | Sign on login, verify in `isAdmin`. | `jwt.sign({userId:admin._id}, process.env.JWT_SECRET, {expiresIn:'2h'});` |
-| **multer** | Parses `multipart/form-data` for file uploads. | `memoryStorage` keeps the file in RAM for quick parsing. | `const upload = multer({ storage: multer.memoryStorage() });` |
-| **qrcode** | Generates QR code images on the fly. | Called during allocation to embed seat metadata. | `QRCode.toDataURL(payload)` |
-| **jsPDF + jspdf‑autotable** | Client‑side PDF creation without server round‑trip. | PDF export functions in `pdfService.js`. | `doc.autoTable({head, body});` |
-| **Vite** (dev server) | Lightning‑fast module bundling, HMR for React. | `npm run dev` starts UI on `localhost:5173`. | `vite.config.js` with `reactRefresh` plugin. |
-| **dotenv** | Loads environment variables (`MONGO_URI`, `JWT_SECRET`). | `.env` placed in `backend/`. | `require('dotenv').config();` |
+- **Frontend**: React (Vite), Tailwind CSS (Premium Dark Theme), Redux Toolkit (RTK-Query), Lucide Icons, Recharts.
+- **Backend**: Node.js, Express, MongoDB (Mongoose), JWT (jsonwebtoken), Bcrypt (Security), Multer (File Handling).
+- **Reporting**: jsPDF, jspdf-autotable, qrcode (QR Generation).
 
 ---
 
-## 5. My Contribution (VERY IMPORTANT)
+## 5. My Contribution
 
-| Area | What I Delivered |
-|------|-------------------|
-| **Frontend** | - Implemented the **Upload** page with a modern drag‑and‑drop UI using Lucide icons and Tailwind. <br> - Completely rewrote `SeatingView.jsx` to a clean, production‑grade layout (grid, occupancy badge, responsive header). <br> - Integrated RTK‑Query hooks throughout the UI, handling loading/error states uniformly. |
-| **Backend** | - Designed and coded the **column‑wise zig‑zag allocation algorithm** in `allocation.controller.js`. <br> - Added **QR code generation** for each seat. <br> - Refactored upload logic to use **bulk upsert** (`Student.bulkWrite`) to avoid duplicate‑roll errors on re‑uploads. |
-| **Seed & Data** | - Wrote `seed.js` that creates hall definitions, a default admin, and a dummy student set for quick testing. |
-| **PDF Service** | - Built `pdfService` functions that generate Hall List, Door Signage, and Student Slip PDFs, embedding QR images and styling tables to resemble real‑world reports. |
-| **Challenges Faced** | - **Duplicate roll numbers** on successive uploads caused allocation failures. *Solution*: switched to bulk upsert with `upsert:true`. <br> - **Zig‑zag direction logic** was initially top‑to‑bottom for all columns; added even‑column reversal using `step` calculation. <br> - **UI misalignment** caused by fixed width cells; resolved by using a true CSS grid (`gridTemplateColumns`) and flattening the matrix. |
-| **Testing & Verification** | - Ran end‑to‑end tests: uploaded a 500‑record `.txt` file, generated allocation, inspected the grid, and verified PDF output. <br> - Added console logs and unit‑like checks to ensure seat `row/col` never exceeds hall dimensions. |
+I delivered the full end-to-end solution, including:
+- **Algorithm Design**: The column-wise zig-zag interleaving engine.
+- **UI/UX**: A production-ready "Mission Control" dashboard inspired by modern apps like Stripe and Notion.
+- **Data Safety**: Robust regex parsing for legacy text files and atomic bulk writes for the database.
+- **Reporting**: Automated PDF generation suite with embedded QR codes.
 
 ---
 
-## 6. Code Explanation (Deep Understanding)
-
-### 6.1 Allocation Controller – `generateAllocation`
-
-```js
-const generateAllocation = async (req, res) => {
-  try {
-    const { examId } = req.body;
-    if (!examId) return res.status(400).json({ message: "examId is required" });
-
-    // 1️⃣ Prevent duplicate allocation
-    const existing = await SeatingAllocation.findOne({ examId });
-    if (existing) return res.status(400).json({ message: "Allocation already exists" });
-
-    // 2️⃣ Load data
-    const students = await Student.find({}).sort({ rollNumber: 1 });
-    const halls    = await Hall.find({});
-
-    // 3️⃣ Capacity guard
-    const totalCapacity = halls.reduce((s, h) => s + h.capacity, 0);
-    if (totalCapacity < students.length)
-      throw new Error(`Not enough seats (${totalCapacity} < ${students.length})`);
-
-    // 4️⃣ Interleave by department (round‑robin)
-    const byDept = {};
-    students.forEach(s => (byDept[s.department] = (byDept[s.department]||[]).push(s)));
-    const keys = Object.keys(byDept);
-    const mergedStudents = [];
-    let hasMore = true;
-    while (hasMore) {
-      hasMore = false;
-      for (const k of keys) {
-        if (byDept[k].length) {
-          mergedStudents.push(byDept[k].shift());
-          hasMore = true;
-        }
-      }
-    }
-
-    // 5️⃣ Column‑wise zig‑zag placement
-    let idx = 0;
-    const toSave = [];
-    for (const hall of halls) {
-      const { rows, cols } = hall;
-      for (let c = 1; c <= cols && idx < mergedStudents.length; c++) {
-        const start = c % 2 === 0 ? rows : 1;
-        const end   = c % 2 === 0 ? 1 : rows;
-        const step  = c % 2 === 0 ? -1 : 1;
-        for (let r = start; (step===1 ? r<=end : r>=end) && idx < mergedStudents.length; r+=step) {
-          const stu = mergedStudents[idx++];
-          const seatNumber = `R${r}C${c}`;
-          const qrPayload = JSON.stringify({ examId, studentId: stu._id, roll: stu.rollNumber, hall: hall.name, seat: seatNumber });
-          const qrCodeUrl = await QRCode.toDataURL(qrPayload);
-          toSave.push({ examId, studentId: stu._id, hallId: hall._id, seatNumber, row: r, col: c, qrCodeUrl });
-        }
-      }
-      if (idx >= mergedStudents.length) break;
-    }
-
-    await SeatingAllocation.insertMany(toSave);
-    res.status(200).json({ message: "Seating Allocation completed", allocatedCount: toSave.length });
-  } catch (e) {
-    res.status(500).json({ message: "Allocation Failed", error: e.message });
-  }
-};
-```
-
-**Why it looks this way**
-- Guard clauses stop bad requests early. 
-- Capacity check saves time when halls are insufficient. 
-- The round‑robin interleaving guarantees an even spread of departments. 
-- Zig‑zag uses column parity to decide direction, meeting the “column‑wise” requirement. 
-- QR payload contains all data needed to verify a student’s seat later. 
-- `insertMany` batches DB writes for performance.
-
-### 6.2 Upload Controller – `uploadStudents`
-
-```js
-const uploadStudents = async (req, res) => {
-  try {
-    if (!req.file) return res.status(400).json({ message: "No file uploaded" });
-
-    let rows = [];
-    if (req.file.originalname.toLowerCase().endsWith('.txt')) {
-      const text = req.file.buffer.toString('utf8');
-      const lines = text.split('\n').map(l=>l.trim()).filter(Boolean);
-      const regex = /^(\d+)\s+([A-Z0-9]+)\s+(.+?)\s+([MF]|-)\s+(B\.Tech\.|-)\s+(.+?)\s+(\d{2}-[A-Za-z]{3}-\d{4}|-)\s+([A-Z]|-)\s+([\w.-]+@[\w.-]+)\s+([\dA-Z]+)\s+(\d+)$/;
-      for (let i=1;i<lines.length;i++) {
-        const m = lines[i].match(regex);
-        if (m) rows.push({ rollNumber: m[2], name: m[3], department: m[6] });
-      }
-    } else {
-      const wb = xlsx.read(req.file.buffer, {type:'buffer'});
-      rows = xlsx.utils.sheet_to_json(wb.Sheets[wb.SheetNames[0]]);
-    }
-
-    // Validation + duplicate detection in‑memory
-    const set = new Set(); const toInsert = []; const errors=[];
-    rows.forEach((r,i)=> {
-      if (!r.rollNumber||!r.name||!r.department) {
-        errors.push(`Row ${i+2}: missing fields`);
-        return;
-      }
-      if (set.has(r.rollNumber)) {
-        errors.push(`Row ${i+2}: duplicate roll ${r.rollNumber}`);
-        return;
-      }
-      set.add(r.rollNumber);
-      toInsert.push(r);
-    });
-    if (errors.length) throw new Error(`Validation failed:\n${errors.join('\n')}`);
-
-    // Upsert – idempotent upload
-    const ops = toInsert.map(s=>({ updateOne:{filter:{rollNumber:s.rollNumber},update:{$set:s},upsert:true}}));
-    await Student.bulkWrite(ops);
-    res.status(201).json({ message:"Bulk upload successful", insertedCount:toInsert.length });
-  } catch (e) {
-    res.status(400).json({ message:"Upload failed", error:e.message });
-  }
-};
-```
-
-- **Bulk upsert** makes the upload idempotent – re‑uploading the same file won’t throw duplicate‑key errors. 
-- The regex matches the exact format used by the university’s legacy text files.
-
-### 6.3 Seating UI – `SeatingView.jsx` (excerpt)
-
-```jsx
-{Object.entries(groupedByHall).map(([hallName, hallData]) => {
-  const { rows, cols, capacity } = hallData.info;
-  const matrix = Array.from({ length: rows }, () => Array(cols).fill(null));
-  hallData.seats.forEach(seat => {
-    if (seat.row <= rows && seat.col <= cols) {
-      matrix[seat.row - 1][seat.col - 1] = seat;
-    }
-  });
-  return (
-    <section key={hallName} className="bg-white dark:bg-slate-800 rounded-lg border border-gray-200 dark:border-slate-700 shadow-sm overflow-hidden">
-      <div className="flex justify-between items-center px-4 py-2 border-b border-gray-200 dark:border-slate-700">
-        <h2 className="text-lg font-medium text-slate-800 dark:text-white">{hallName}</h2>
-        <span className="text-sm bg-gray-100 dark:bg-slate-700 px-3 py-1 rounded-full text-slate-600 dark:text-slate-300">
-          Occupancy: {hallData.seats.length} / {capacity}
-        </span>
-      </div>
-      <div
-        className="grid gap-1 p-4"
-        style={{ gridTemplateColumns: `repeat(${cols}, minmax(0, 1fr))` }}
-      >
-        {matrix.flat().map((seat, idx) => (
-          <div
-            key={idx}
-            title={seat ? `${seat.studentId.name} (${seat.studentId.department})` : 'Empty'}
-            className={`h-12 flex items-center justify-center text-xs border rounded ${seat ? 'bg-emerald-100 dark:bg-emerald-900/30 border-emerald-400 text-emerald-800 dark:text-emerald-200' : 'bg-gray-100 dark:bg-slate-700 border-gray-300 text-gray-500'}`}
-          >
-            {seat ? seat.seatNumber : ''}
-          </div>
-        ))}
-      </div>
-    </section>
-  );
-})}
-```
-
-- **Matrix** makes placement O(1) look‑up when rendering. 
-- **CSS grid** (`gridTemplateColumns`) guarantees each hall displays exactly the number of columns defined in the DB, independent of screen size. 
-- **Conditional styling** provides clear visual distinction between occupied and empty seats while staying lightweight.
-
----
-
-## 7. Challenges and Solutions
-
-| Problem | Solution |
-|---------|----------|
-| Duplicate roll numbers on re‑upload | Switched to `bulkWrite` with `upsert:true` – makes uploads idempotent. |
-| Zig‑zag direction error | Added even‑column reversal using `step` variable. |
-| Grid misalignment (fixed width) | Replaced fixed width with CSS grid (`gridTemplateColumns`). |
-| QR code image size in PDFs | Scaled QR to a fixed 30 mm size before insertion. |
-| Authentication bypass during dev | Enforced `isAdmin` middleware on all routes; verified 401 responses. |
-
----
-
-## 8. Future Improvements
-
-1. **Role‑based access control** – Separate admin, faculty, and auditor roles.
-2. **Seat‑blocking** – Allow admins to mark unavailable seats; allocation algorithm skips them.
-3. **Multi‑exam support** – Separate `Exam` model with metadata; reuse halls for different dates.
-4. **CSV/Excel export** – Some users prefer spreadsheets for post‑processing.
-5. **Automated test suite** – Jest unit tests for allocation logic; Cypress end‑to‑end UI tests.
-6. **Performance for very large exams** – Stream students from DB, use MongoDB bulk cursor, batch insert seats.
-7. **Internationalisation (i18n)** – UI strings in multiple languages for global campuses.
-8. **Accessibility audit** – Ensure WCAG compliance (focus rings, ARIA labels).
-
----
-
-*End of documentation.*
+*Documentation updated: April 2026*

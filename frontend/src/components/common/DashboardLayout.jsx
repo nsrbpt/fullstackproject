@@ -28,10 +28,10 @@ const DashboardLayout = () => {
             <UploadCloud className="w-5 h-5 text-slate-400" />
             <span>Data Ingestion</span>
           </Link>
-          <button className="w-full flex items-center space-x-3 p-3 rounded-lg hover:bg-slate-700 transition-colors opacity-50 cursor-not-allowed">
+          <Link to="/seating" className="flex items-center space-x-3 p-3 rounded-lg hover:bg-slate-700 transition-colors">
             <Grid className="w-5 h-5 text-slate-400" />
-            <span>Seating Grids (Use ID)</span>
-          </button>
+            <span>Seating Grids</span>
+          </Link>
         </nav>
         <div className="p-4 border-t border-slate-700">
           <button

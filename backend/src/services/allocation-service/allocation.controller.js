@@ -127,4 +127,37 @@ const getAllocation = async (req, res) => {
   }
 };
 
-module.exports = { generateAllocation, getAllocation };
+const getAllAllocations = async (req, res) => {
+  try {
+    console.log('>>> GET_ALL_ALLOCATIONS CALLED <<<');
+    const allocations = await SeatingAllocation.find({}).populate('studentId').populate('hallId');
+    console.log('Allocations count:', allocations.length);
+    res.status(200).json(allocations);
+  } catch (error) {
+    res.status(500).json({ message: "Failed to fetch allocations", error: error.message });
+  }
+};
+
+const getSystemStats = async (req, res) => {
+  try {
+    console.log('>>> GET_SYSTEM_STATS CALLED <<<');
+    const studentCount = await Student.countDocuments();
+    const hallCount = await Hall.countDocuments();
+    const allocationDocs = await SeatingAllocation.find({});
+    const uniqueExams = [...new Set(allocationDocs.map(a => a.examId))];
+    
+    const stats = {
+      studentCount,
+      hallCount,
+      examCount: uniqueExams.length,
+      exams: uniqueExams
+    };
+    
+    console.log('Stats response:', stats);
+    res.status(200).json(stats);
+  } catch (error) {
+    res.status(500).json({ message: "Failed to fetch stats", error: error.message });
+  }
+};
+
+module.exports = { generateAllocation, getAllocation, getAllAllocations, getSystemStats };

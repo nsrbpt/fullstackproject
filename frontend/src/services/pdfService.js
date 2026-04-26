@@ -67,7 +67,7 @@ export const generateStudentSlips = (allocations, examId) => {
   const doc = new jsPDF();
   let y = 20;
 
-  allocations.forEach((a, index) => {
+  allocations.forEach((a) => {
     if (y > 250) {
       doc.addPage();
       y = 20;

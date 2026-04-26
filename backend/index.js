@@ -19,6 +19,8 @@ app.use(morgan('dev'));
 const authRoutes = require('./src/services/auth-service/auth.routes');
 const uploadRoutes = require('./src/services/upload-service/upload.routes');
 const allocationRoutes = require('./src/services/allocation-service/allocation.routes');
+const allocationController = require('./src/services/allocation-service/allocation.controller');
+const { isAdmin } = require('./src/api-gateway/middleware/auth.middleware');
 
 app.use('/api/auth', authRoutes);
 app.use('/api/upload', uploadRoutes);

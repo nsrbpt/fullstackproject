@@ -41,6 +41,14 @@ export const apiSlice = createApi({
       query: (examId) => `/allocation/${examId}`,
       providesTags: ['Allocation'],
     }),
+    getAllAllocations: builder.query({
+      query: () => '/allocation/all',
+      providesTags: ['Allocation'],
+    }),
+    getSystemStats: builder.query({
+      query: () => '/allocation/stats',
+      providesTags: ['Allocation', 'Student', 'Hall'],
+    }),
   }),
 });
 
@@ -49,4 +57,6 @@ export const {
   useUploadStudentsMutation,
   useGenerateAllocationMutation,
   useGetAllocationQuery,
+  useGetAllAllocationsQuery,
+  useGetSystemStatsQuery,
 } = apiSlice;

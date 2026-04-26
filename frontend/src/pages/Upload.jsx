@@ -4,7 +4,7 @@ import { UploadCloud, CheckCircle2, AlertCircle, Loader2 } from 'lucide-react';
 
 const Upload = () => {
   const [file, setFile] = useState(null);
-  const [uploadStudents, { isLoading, isSuccess, isError, error }] = useUploadStudentsMutation();
+  const [uploadStudents, { isLoading, isSuccess, isError }] = useUploadStudentsMutation();
   const [message, setMessage] = useState('');
 
   const handleFileChange = (e) => {

@@ -96,9 +96,9 @@ const SeatingView = () => {
                 <div
                   key={idx}
                   title={seat ? `${seat.studentId.name} (${seat.studentId.department})` : 'Empty'}
-                  className={`h-12 flex items-center justify-center text-xs border rounded ${seat ? 'bg-emerald-100 dark:bg-emerald-900/30 border-emerald-400 text-emerald-800 dark:text-emerald-200' : 'bg-gray-100 dark:bg-slate-700 border-gray-300 text-gray-500'}`}
+                  className={`h-12 flex items-center justify-center text-[10px] font-mono border rounded ${seat ? 'bg-emerald-100 dark:bg-emerald-900/30 border-emerald-400 text-emerald-800 dark:text-emerald-200' : 'bg-gray-100 dark:bg-slate-700 border-gray-300 text-gray-500'}`}
                 >
-                  {seat ? seat.seatNumber : ''}
+                  {seat ? seat.studentId.rollNumber : ''}
                 </div>
               ))}
             </div>
