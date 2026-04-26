@@ -1,0 +1,501 @@
+S.No Register No. Student Name Gender Program Branch Date of Birth Section Student Official Email Marks in English %
+1 AP24110010001 TULASI VISWAMBHAR M B.Tech. Computer Science and Engineering 27-Apr-2007 A viswambhar_tulasi@srmap.edu.in 25 83
+2 AP24110010002 HARIHARAN KALYANA SUNDARAM M B.Tech. Computer Science and Engineering 02-Nov-2006 A hariharan_kalyanasundaram@srmap.edu.in 24 80
+3 AP24110010003 SHAIK JASMINE F B.Tech. Computer Science and Engineering 14-Dec-2006 A jasmine_shaik@srmap.edu.in 22 73
+4 AP24110010004 SHRIJA DWIVEDI F B.Tech. Computer Science and Engineering 22-Feb-2007 A shrija_dwivedi@srmap.edu.in 26 87
+5 AP24110010005 SIDAGAM LAKSHMI TANMAYEE F B.Tech. Computer Science and Engineering 23-Oct-2006 A tanmayee_sidagam@srmap.edu.in 23 77
+6 AP24110010006 ARUN SAI GUMMALLA M B.Tech. Computer Science and Engineering 14-Jun-2007 A arunsai_gummalla@srmap.edu.in A 0
+7 AP24110010007 GOLLAMUDI AKHIL CHOWDARY M B.Tech. Computer Science and Engineering 08-Oct-2006 A akhilchowdary_gollamudi@srmap.edu.in 16 53
+8 AP24110010008 KANTHETI CHARITHA F B.Tech. Computer Science and Engineering 01-Dec-2006 A charitha_kantheti@srmap.edu.in 23 77
+9 AP24110010009 SHILPI KUMARI F B.Tech. Computer Science and Engineering 07-Aug-2005 A shilpi_kumari@srmap.edu.in 21 70
+10 AP24110010010 CHALLAGUNDLA NAGA RAMYA SRI F B.Tech. Computer Science and Engineering 26-Nov-2006 A ramyasri_challagundla@srmap.edu.in 21 70
+11 AP24110010011 SHAIK KISHAD AHAMED M B.Tech. Computer Science and Engineering 09-Nov-2006 A kishadahamed_shaik@srmap.edu.in 24 80
+12 AP24110010012 ADISHREE BHUYAN KUMARI F B.Tech. Computer Science and Engineering 09-Oct-2005 A adishree_bhuyankumari@srmap.edu.in 28 93
+13 AP24110010013 CHERUKURI BHUVAN SAI VENKAT M B.Tech. Computer Science and Engineering 20-Apr-2006 A bhuvansai_cherukuri@srmap.edu.in A 0
+14 AP24110010014 DARA THRINADH SAI VYBHAV M B.Tech. Computer Science and Engineering 05-Apr-2007 A saivybhav_dara@srmap.edu.in 22 73
+15 AP24110010015 EDARA JAHNAVI SAI F B.Tech. Computer Science and Engineering 11-Jul-2006 A jahnavisai_edara@srmap.edu.in A 0
+16 AP24110010016 BADUGU DHANUSH M B.Tech. Computer Science and Engineering 23-Jan-2007 A dhanush_badugu@srmap.edu.in 22 73
+17 AP24110010017 TOKALA BHARGAV SAI M B.Tech. Computer Science and Engineering 27-Oct-2006 A bhargavsai_tokala@srmap.edu.in 19 63
+18 AP24110010018 TANUBODDI SIVA SAI SRI SACHIN REDDY M B.Tech. Computer Science and Engineering 30-Nov-2006 A sachinreddy_tanuboddi@srmap.edu.in 20 67
+19 AP24110010019 BOINA REVANTH M B.Tech. Computer Science and Engineering 08-Mar-2007 B revanth_boina@srmap.edu.in 21 70
+20 AP24110010020 SHAIK FARVEZ M B.Tech. Computer Science and Engineering 25-Dec-2007 A farvez_shaik@srmap.edu.in 25 83
+21 AP24110010021 KAVITI SRI ANIRUDH M B.Tech. Computer Science and Engineering 12-May-2007 A srianirudh_kaviti@srmap.edu.in 22 73
+22 AP24110010023 PEDDIREDDY MOHAN VENKATA KISHORE REDDY M B.Tech. Computer Science and Engineering 08-Jan-2007 B kishorereddy_peddireddy@srmap.edu.in 11 37
+23 AP24110010024 NAVADEEP SAI GANESH SIRAM M B.Tech. Computer Science and Engineering 04-Aug-2006 A navadeep_siram@srmap.edu.in 26 87
+24 AP24110010025 KAZA TANISHA F B.Tech. Computer Science and Engineering 06-Jul-2006 A tanisha_kaza@srmap.edu.in 24 80
+25 AP24110010026 BATTULA VARSHINI F B.Tech. Computer Science and Engineering 11-Oct-2006 A varshini_battula@srmap.edu.in 26 87
+26 AP24110010027 ARIGELA BILWANTH VENKAT M B.Tech. Computer Science and Engineering 03-Jun-2007 A bilwanthvenkat_arigela@srmap.edu.in 19 63
+27 AP24110010028 GARIKAPATI MAHENDRA SAI M B.Tech. Computer Science and Engineering 27-Jul-2006 B mahendrasai_garikapati@srmap.edu.in 18 60
+28 AP24110010029 KAVYA P F B.Tech. Computer Science and Engineering 19-Mar-2005 A kavya_p@srmap.edu.in 25 83
+29 AP24110010030 S LIKHITA VARMA F B.Tech. Computer Science and Engineering 09-Oct-2006 A likhitavarma_s@srmap.edu.in 25 83
+30 AP24110010031 MOVVA BALA ADITHYA M B.Tech. Computer Science and Engineering 04-Sep-2006 A balaadithya_movva@srmap.edu.in 14 47
+31 AP24110010032 BHAVANAM HANEESH REDDY M B.Tech. Computer Science and Engineering 10-Nov-2006 A haneesh_bhavanam@srmap.edu.in 27 90
+32 AP24110010033 SAI SHREYANSH YADAV M B.Tech. Computer Science and Engineering 03-Nov-2005 A saishreyansh_yadav@srmap.edu.in 21 70
+33 AP24110010034 CHINTALAPATI MANVITH VARMA M B.Tech. Computer Science and Engineering 19-Sep-2006 A manvith_chintalapati@srmap.edu.in 17 57
+34 AP24110010035 RAGHUNANDAN RAVELA M B.Tech. Computer Science and Engineering 24-Sep-2006 A raghunandan_ravela@srmap.edu.in 21 70
+35 AP24110010036 SHAIK NAGUL MEERA M B.Tech. Computer Science and Engineering 08-May-2005 A nagulmeera_shaik@srmap.edu.in 19 63
+36 AP24110010037 NUKALA MEENAKSHI F B.Tech. Computer Science and Engineering 29-Jun-2006 A meenakshi_nukala@srmap.edu.in 27 90
+37 AP24110010038 AASTHA KIRTANIA F B.Tech. Computer Science and Engineering 28-Jul-2005 A aastha_kirtania@srmap.edu.in 24 80
+38 AP24110010039 TIRUMAREDDI NIKHILESH M B.Tech. Computer Science and Engineering 04-May-2007 A nikhilesh_tirumareddi@srmap.edu.in 23 77
+39 AP24110010040 MALLIPUDI MANASWINI F B.Tech. Computer Science and Engineering 20-Jun-2007 A manaswini_mallipudi@srmap.edu.in 24 80
+40 AP24110010041 TANGUDU JASWANTH SAI M B.Tech. Computer Science and Engineering 29-Jul-2007 A jaswanthsai_tangudu@srmap.edu.in A 0
+41 AP24110010042 MIHIRKANT PRADHAN M B.Tech. Computer Science and Engineering 21-Mar-2005 A mihirkant_pradhan@srmap.edu.in 20 67
+42 AP24110010043 SYED HAROON NAVEED M B.Tech. Computer Science and Engineering 30-Jun-2007 A haroonnaveed_syed@srmap.edu.in 26 87
+43 AP24110010044 NANDURU LAHARI F B.Tech. Computer Science and Engineering 15-Mar-2007 A lahari_nanduru@srmap.edu.in 26 87
+44 AP24110010045 PULLURE AAKANKSHA F B.Tech. Computer Science and Engineering 20-Jul-2006 B aakanksha_pullure@srmap.edu.in 17 57
+45 AP24110010046 MANDAVA MAHENDRA M B.Tech. Computer Science and Engineering 07-May-2007 A mahendra_mandava@srmap.edu.in 27 90
+46 AP24110010047 ALLAM PRANATHI F B.Tech. Computer Science and Engineering 26-May-2007 A pranathi_allam@srmap.edu.in 23 77
+47 AP24110010048 ARINDAM GUPTA M B.Tech. Computer Science and Engineering 29-Apr-2006 A arindam_gupta@srmap.edu.in 25 83
+48 AP24110010049 VEERANKI LALITHA VENKATA SAI PRUDHVI M B.Tech. Computer Science and Engineering 09-Jul-2007 A saiprudhvi_veeranki@srmap.edu.in 21 70
+49 AP24110010050 CHELIKANI SRIRAM NANDHAN M B.Tech. Computer Science and Engineering 21-Jun-2007 A sriramnandhan_chelikani@srmap.edu.in 24 80
+50 AP24110010051 TADIKONDA KASI VISWANADH M B.Tech. Computer Science and Engineering 05-Sep-2006 A kasiviswanadh_tadikonda@srmap.edu.in 23 77
+51 AP24110010052 RITESH KUMAR M B.Tech. Computer Science and Engineering 08-Jul-2006 A riteshkumar_manoj@srmap.edu.in 23 77
+52 AP24110010053 MANTHENA ASHMITHA F B.Tech. Computer Science and Engineering 15-Mar-2007 A ashmitha_manthena@srmap.edu.in 24 80
+53 AP24110010054 KAVETI RINEEKA VYSHNAVI F B.Tech. Computer Science and Engineering 11-May-2006 A rineekavyshnavi_kaveti@srmap.edu.in 27 90
+54 AP24110010055 DEVALLA JYOTHI SWAROOP RAJ M B.Tech. Computer Science and Engineering 08-Aug-2006 A swaroopraj_devalla@srmap.edu.in 21 70
+55 AP24110010056 NEELI LIKHITH MADHAV M B.Tech. Computer Science and Engineering 11-Sep-2006 B likhithmadhav_neeli@srmap.edu.in 17 57
+56 AP24110010057 GALI DEEKSHITHA F B.Tech. Computer Science and Engineering 13-Jul-2006 B deekshitha_gali@srmap.edu.in 25 83
+57 AP24110010058 KONGARA JANAKI SRI RAM M B.Tech. Computer Science and Engineering 25-Nov-2006 A janakisriram_kongara@srmap.edu.in 20 67
+58 AP24110010059 CHINTHAMREDDY VENKATA RITHESH REDDY M B.Tech. Computer Science and Engineering 22-Oct-2006 A rithesh_chintamreddy@srmap.edu.in 20 67
+59 AP24110010060 SRISHA DEVINENI F B.Tech. Computer Science and Engineering 25-Apr-2006 A srisha_devineni@srmap.edu.in 29 97
+60 AP24110010061 MEDASANI PUJITHA F B.Tech. Computer Science and Engineering 13-Sep-2007 A pujitha_medasani@srmap.edu.in 25 83
+61 AP24110010062 KALLEPALLI TEJESH VARMA M B.Tech. Computer Science and Engineering 10-Feb-2007 A tejeshvarma_kallepalli@srmap.edu.in 21 70
+62 AP24110010063 VUNDAVALLI VENKATA ADITYA M B.Tech. Computer Science and Engineering 05-Apr-2006 B venkataaditya_vundavalli@srmap.edu.in 23 77
+63 AP24110010064 NARVA CHARITHA F B.Tech. Computer Science and Engineering 27-Oct-2006 A charitha_narva@srmap.edu.in 24 80
+64 AP24110010065 SAMUDRALA SAI CHARAN M B.Tech. Computer Science and Engineering 07-Oct-2006 A saicharan_samudrala@srmap.edu.in 19 63
+65 AP24110010066 BATHALA NAGA VENKATA SAI SANTOSH M B.Tech. Computer Science and Engineering 21-Nov-2006 A santosh_bathala@srmap.edu.in 23 77
+66 AP24110010067 DEBMALYAA DEY M B.Tech. Computer Science and Engineering 29-Jun-2005 A debmalyaa_dey@srmap.edu.in 22 73
+67 AP24110010068 DESAMSETTI CHARAN S T S RAJ M B.Tech. Computer Science and Engineering 17-Apr-2007 A charanraj_desamsetti@srmap.edu.in 23 77
+68 AP24110010069 AKULA VIJAYA SAI M B.Tech. Computer Science and Engineering 23-Jun-2006 A vijayasai_akula@srmap.edu.in 21 70
+69 AP24110010070 KOTI SASI VARDHAN REDDY M B.Tech. Computer Science and Engineering 30-Nov-2006 A sasivardhan_koti@srmap.edu.in 27 90
+70 AP24110010071 VIDADALA REVANTH M B.Tech. Computer Science and Engineering 09-Feb-2007 A revanth_vidadala@srmap.edu.in 23 77
+71 AP24110010072 DAMA VENKATA DHANUSH CHOWDARY M B.Tech. Computer Science and Engineering 06-Oct-2006 B dhanush_dama@srmap.edu.in 14 47
+72 AP24110010073 GUJJARLLAPUDI GAIYA VANI F B.Tech. Computer Science and Engineering 10-Aug-2006 A gaiyavani_gujjarllapudi@srmap.edu.in 18 60
+73 AP24110010074 KOLLAPUDI JOSHITA SAI SREE F B.Tech. Computer Science and Engineering 02-Jul-2007 B joshita_kollapudi@srmap.edu.in 23 77
+74 AP24110010075 GOGINENI BHUVAN M B.Tech. Computer Science and Engineering 24-Aug-2007 A bhuvan_gogineni@srmap.edu.in 23 77
+75 AP24110010076 CHAVA VARSHINI F B.Tech. Computer Science and Engineering 07-Nov-2006 A varshini_chava@srmap.edu.in 20 67
+76 AP24110010077 PASUPULETI CHETAN VENKAT M B.Tech. Computer Science and Engineering 29-Dec-2006 C chetanvenkat_pasupuleti@srmap.edu.in 13 43
+77 AP24110010078 SAIAKSHAYA BOYAPATI F B.Tech. Computer Science and Engineering 22-Apr-2007 C saiakshaya_boyapati@srmap.edu.in 16 53
+78 AP24110010079 THOTAKURA KISHAN BALARAM M B.Tech. Computer Science and Engineering 26-Feb-2007 C kishanbalaram_thotakura@srmap.edu.in 25 83
+79 AP24110010080 CHINTHALAPATI VIKRAM M B.Tech. Computer Science and Engineering 24-Sep-2005 C vikram_chinthalapati@srmap.edu.in 15 50
+80 AP24110010081 JAMMULA GOKUL KRISHNA M B.Tech. Computer Science and Engineering 13-Apr-2007 C gokulkrishna_jammula@srmap.edu.in 22 73
+81 AP24110010082 GADDAM ADITHYA M B.Tech. Computer Science and Engineering 24-May-2006 C adithya_gaddam@srmap.edu.in 22 73
+82 AP24110010083 SHAIK SOHALE F B.Tech. Computer Science and Engineering 08-Jun-2006 C sohale_shaik@srmap.edu.in 14 47
+83 AP24110010084 GOLLAMUDI JAYA SAI ROHAN M B.Tech. Computer Science and Engineering 06-Dec-2005 C jayasairohan_gollamudi@srmap.edu.in 27 90
+84 AP24110010085 PONUGOTI DHATRIKA F B.Tech. Computer Science and Engineering 03-Aug-2007 C dhatrika_ponugoti@srmap.edu.in 24 80
+85 AP24110010086 KALLURU REHMAN M B.Tech. Computer Science and Engineering 13-Jun-2006 C rehman_kalluru@srmap.edu.in 24 80
+86 AP24110010087 SAACHI AHUJA F B.Tech. Computer Science and Engineering 02-Aug-2006 C saachi_ahuja@srmap.edu.in 26 87
+87 AP24110010088 SHAIK SAMEERA TABASSUM F B.Tech. Computer Science and Engineering 06-Sep-2006 C sameeratabassum_shaik@srmap.edu.in 26 87
+88 AP24110010089 REPUDI ZIONJOY F B.Tech. Computer Science and Engineering 20-Jan-2007 C zionjoy_repudi@srmap.edu.in 25 83
+89 AP24110010090 GAMPALA THARUN REDDY M B.Tech. Computer Science and Engineering 18-Jun-2005 C tharunreddy_gampala@srmap.edu.in 20 67
+90 AP24110010091 MEDARAMETLA LASYA F B.Tech. Computer Science and Engineering 20-Jun-2006 C lasya_medarametla@srmap.edu.in 19 63
+91 AP24110010092 CHAKKIRALA VISHNU AKHIL M B.Tech. Computer Science and Engineering 20-Jan-2007 C vishnuakhil_chakkirala@srmap.edu.in 21 70
+92 AP24110010093 MEHANTH CHAGANTIPATI M B.Tech. Computer Science and Engineering 20-Sep-2006 C mehanth_chagantipati@srmap.edu.in 20 67
+93 AP24110010094 VANGARA VEDAKSHARI F B.Tech. Computer Science and Engineering 18-May-2007 B vedakshari_vangara@srmap.edu.in 18 60
+94 AP24110010095 SOMARAJU NITHIN SURYA M B.Tech. Computer Science and Engineering 21-Nov-2006 C nithinsurya_somaraju@srmap.edu.in 22 73
+95 AP24110010096 TANMAY SHELKE M B.Tech. Computer Science and Engineering 07-Jul-2006 C tanmay_shelke@srmap.edu.in 26 87
+96 AP24110010097 RAJSHREE RATHOUR F B.Tech. Computer Science and Engineering 12-Aug-2004 C rajshree_rathour@srmap.edu.in 22 73
+97 AP24110010098 VENNELAKANTI GNANA NARASIMHA SRIMAN M B.Tech. Computer Science and Engineering 09-Mar-2006 B sriman_venelakanti@srmap.edu.in 22 73
+98 AP24110010099 CHEMBETI NIVEDITHA F B.Tech. Computer Science and Engineering 14-Oct-2007 C niveditha_chembeti@srmap.edu.in 21 70
+99 AP24110010100 KARRI DEEPAKREDDY M B.Tech. Computer Science and Engineering 12-Aug-2006 C deepakreddy_karri@srmap.edu.in 23 77
+100 AP24110010101 MRUTYUNJAY MANAS SAHU M B.Tech. Computer Science and Engineering 14-Jan-2007 C mrutyunjaymanas_sahu@srmap.edu.in 24 80
+101 AP24110010102 KAZA VAMSI KRISHNA M B.Tech. Computer Science and Engineering 07-Feb-2006 C vamsikrishna_kaza@srmap.edu.in 21 70
+102 AP24110010103 ANNABATHUNI RUDVI SRI VARDHAN M B.Tech. Computer Science and Engineering 25-Jun-2007 C srivardhan_annabathuni@srmap.edu.in 21 70
+103 AP24110010104 SRIRAM HEMANTH VISWA M B.Tech. Computer Science and Engineering 18-Sep-2006 C hemanthviswa_sriram@srmap.edu.in 23 77
+104 AP24110010105 VINJAM DHANUSH NAIDU M B.Tech. Computer Science and Engineering 23-Dec-2006 C dhanushnaidu_vinjam@srmap.edu.in 24 80
+105 AP24110010106 SYED AAMNA F B.Tech. Computer Science and Engineering 02-Nov-2006 C aamna_syed@srmap.edu.in 27 90
+106 AP24110010107 GRANDHI VENKATA NAGASAI ROHITH M B.Tech. Computer Science and Engineering 12-May-2006 B rohith_grandhi@srmap.edu.in 24 80
+107 AP24110010108 YENUGULA RUTHVIK CHANDRA M B.Tech. Computer Science and Engineering 12-Oct-2007 C ruthvikchandra_yenugula@srmap.edu.in 22 73
+108 AP24110010109 PONNAPATI JYOTHI SAHASRA F B.Tech. Computer Science and Engineering 09-May-2007 C jyothisahasra_ponnapati@srmap.edu.in 26 87
+109 AP24110010110 PABBATHI PARDHU GUPTA M B.Tech. Computer Science and Engineering 06-Feb-2007 C pardhugupta_pabbathi@srmap.edu.in 21 70
+110 AP24110010111 SANAKA CHANDRIKA F B.Tech. Computer Science and Engineering 28-Dec-2006 C chandrika_sanaka@srmap.edu.in 23 77
+111 AP24110010112 SUTHAPALLI VENKAT VIGHNESH M B.Tech. Computer Science and Engineering 08-Nov-2006 C venkatvighnesh_suthapalli@srmap.edu.in 25 83
+112 AP24110010113 PALAKAYALA BALA PRAKASH M B.Tech. Computer Science and Engineering 24-Nov-2006 C balaprakash_palakayala@srmap.edu.in 25 83
+113 AP24110010114 GINJUPALLI NAGA SUBHASH M B.Tech. Computer Science and Engineering 07-Sep-2006 C nagasubhash_ginjupalli@srmap.edu.in 18 60
+114 AP24110010115 GADIRAJU YASWANTH VARMA M B.Tech. Computer Science and Engineering 19-Jul-2005 C yaswanth_gadiraju@srmap.edu.in 21 70
+115 AP24110010116 KONGARA MANOJ KUMAR M B.Tech. Computer Science and Engineering 19-Apr-2006 C manojkumar_kongara@srmap.edu.in 16 53
+116 AP24110010117 THANGAM GUNA SREEJA F B.Tech. Computer Science and Engineering 21-Jan-2007 C gunasreeja_thangam@srmap.edu.in 24 80
+117 AP24110010118 NARIPEDDI UDEEP CHOWDARY M B.Tech. Computer Science and Engineering 10-Oct-2006 - udeep_naripeddi@srmap.edu.in 24 80
+118 AP24110010119 VADLAMUDI SRI RAM M B.Tech. Computer Science and Engineering 26-Apr-2007 C sriram_vadlamudi@srmap.edu.in 20 67
+119 AP24110010120 AYAN CHANGDAR M B.Tech. Computer Science and Engineering 21-Nov-2004 C ayan_changdar@srmap.edu.in 28 93
+120 AP24110010121 RUCHIR KUMAR PAL M B.Tech. Computer Science and Engineering 28-Oct-2006 C ruchirkumar_pal@srmap.edu.in 27 90
+121 AP24110010122 GANUGULA TEJA M B.Tech. Computer Science and Engineering 20-Nov-2006 C teja_ganugula@srmap.edu.in 24 80
+122 AP24110010123 KONDEPATI HARINI F B.Tech. Computer Science and Engineering 12-May-2007 C harini_kondepati@srmap.edu.in 26 87
+123 AP24110010124 DOGIPARTHY MOHAN SASANK M B.Tech. Computer Science and Engineering 31-Mar-2007 C mohansasank_dogiparthy@srmap.edu.in 22 73
+124 AP24110010125 TIRUMALA VARUN NARASIMHA SAI PAVAN M B.Tech. Computer Science and Engineering 24-Jan-2007 C varun_tirumala@srmap.edu.in 21 70
+125 AP24110010126 CHAMANAPALLY ADWAITH MADHAV M B.Tech. Computer Science and Engineering 01-Oct-2006 C adwaithmadhav_chamanapally@srmap.edu.in A 0
+126 AP24110010127 MAGESHWARAN T M B.Tech. Computer Science and Engineering 14-Feb-2006 - mageshwaran_t@srmap.edu.in 26 87
+127 AP24110010128 SAURAV SHANKAR M B.Tech. Computer Science and Engineering 29-Nov-2006 B saurav_shankar@srmap.edu.in 24 80
+128 AP24110010129 ANNE ADITHYA M B.Tech. Computer Science and Engineering 23-Feb-2007 C adithya_anne@srmap.edu.in 24 80
+129 AP24110010130 ADAPA ANOOP JOEL HARSHA M B.Tech. Computer Science and Engineering 22-Dec-2006 C anoopjoelharsha_adapa@srmap.edu.in 19 63
+130 AP24110010131 MADDINENI JATHIN M B.Tech. Computer Science and Engineering 18-May-2006 C jathin_maddineni@srmap.edu.in 26 87
+131 AP24110010132 JAYANTI YADAV F B.Tech. Computer Science and Engineering 04-Oct-2006 B jayanti_yadav@srmap.edu.in 22 73
+132 AP24110010133 GAURAV GAUTAM M B.Tech. Computer Science and Engineering 04-Jul-2004 C gauravgautam_madan@srmap.edu.in 23 77
+133 AP24110010134 PARTH JAIN M B.Tech. Computer Science and Engineering 02-May-2006 C parth_jain@srmap.edu.in 26 87
+134 AP24110010135 VADDEMGUNTA VINAY KUMAR M B.Tech. Computer Science and Engineering 08-Oct-2005 C vinaykumar_vaddemgunta@srmap.edu.in 21 70
+135 AP24110010136 CHINTHALACHERUVU AVINASH REDDY M B.Tech. Computer Science and Engineering 21-Dec-2006 C avinash_chinthalacheruvu@srmap.edu.in 19 63
+136 AP24110010137 GUVVALA DEVI PRIYANKA F B.Tech. Computer Science and Engineering 20-Jun-2006 C devipriyanka_guvvala@srmap.edu.in 18 60
+137 AP24110010138 GUNDA MOKSHITH SAI ANISH M B.Tech. Computer Science and Engineering 12-Dec-2006 C mokshithsaianish_gunda@srmap.edu.in 21 70
+138 AP24110010139 SHAIK NIHAL M B.Tech. Computer Science and Engineering 07-Nov-2006 C nihal_shaik@srmap.edu.in 20 67
+139 AP24110010140 PINJARI TASRIN KOUSAR F B.Tech. Computer Science and Engineering 04-Mar-2007 C tasrinkousar_pinjari@srmap.edu.in 21 70
+140 AP24110010141 KANTETI MADHVIKA F B.Tech. Computer Science and Engineering 13-Nov-2006 C madhvika_kanteti@srmap.edu.in 26 87
+141 AP24110010142 NUNE GURU CHARAN M B.Tech. Computer Science and Engineering 14-Nov-2005 B gurucharan_nune@srmap.edu.in 20 67
+142 AP24110010143 THAKUR TANVIR SABA SINGH F B.Tech. Computer Science and Engineering 30-Aug-2006 B tanvirsabasingh_thakur@srmap.edu.in 26 87
+143 AP24110010144 PATNASHETTY HARSHITHA F B.Tech. Computer Science and Engineering 10-Jun-2006 C harshitha_patnashetty@srmap.edu.in 19 63
+144 AP24110010145 TAVVA ANISHU M B.Tech. Computer Science and Engineering 16-Oct-2006 C anishu_tavva@srmap.edu.in 23 77
+145 AP24110010146 CHEKURI SAI BHARGAV M B.Tech. Computer Science and Engineering 03-Jun-2006 C saibhargav_chekuri@srmap.edu.in 23 77
+146 AP24110010147 NALLA RITHWIK M B.Tech. Computer Science and Engineering 01-Aug-2006 - rithwik_nalla@srmap.edu.in 25 83
+147 AP24110010148 AKULA VIGHNA VENKATA PAVAN SAI M B.Tech. Computer Science and Engineering 12-Mar-2007 C vighnavenkatapavansai_akula@srmap.edu.in 23 77
+148 AP24110010149 GOLLAMUDI LAKSHMI NARASIMHA VAIBHAV M B.Tech. Computer Science and Engineering 15-Jan-2007 C vaibhav_gollamudi@srmap.edu.in 28 93
+149 AP24110010150 KOTA BHAGYA SRI F B.Tech. Computer Science and Engineering 17-Jan-2007 B bhagyasri_kota@srmap.edu.in 21 70
+150 AP24110010151 CHALLA PRAVEEN KUMAR M B.Tech. Computer Science and Engineering 31-Jul-2006 B praveen_challa@srmap.edu.in 20 67
+151 AP24110010152 NAYUDU KRISHNA SREE F B.Tech. Computer Science and Engineering 30-May-2006 C krishnasree_nayudu@srmap.edu.in 24 80
+152 AP24110010153 PERIKALA LAKSHMI SHARAPOVA F B.Tech. Computer Science and Engineering 02-Sep-2006 C lakshmisharapova_perikala@srmap.edu.in 23 77
+153 AP24110010154 ALLU SAI GANESH M B.Tech. Computer Science and Engineering 08-May-2007 C saiganesh_allu@srmap.edu.in 16 53
+154 AP24110010155 REDDY SATYA SAI DINESH M B.Tech. Computer Science and Engineering 16-Oct-2006 C satyasaidinesh_reddy@srmap.edu.in 9 30
+155 AP24110010156 KANCHARLA VENKAT M B.Tech. Computer Science and Engineering 24-Aug-2006 D venkat_kancharla@srmap.edu.in 22 73
+156 AP24110010157 GORANTLA AUNSHIKA F B.Tech. Computer Science and Engineering 16-Jun-2006 D aunshika_gorantla@srmap.edu.in 22 73
+157 AP24110010158 NAGENDLA SAI NEERAJ CHOWDARY M B.Tech. Computer Science and Engineering 29-Nov-2006 D saineeraj_nagendla@srmap.edu.in 22 73
+158 AP24110010159 PATNAM RAM CHARAN M B.Tech. Computer Science and Engineering 19-Sep-2006 D ramcharan_patnam@srmap.edu.in 12 40
+159 AP24110010160 KARNATAKA MOHAN KARTHIKEYA M B.Tech. Computer Science and Engineering 17-Nov-2006 D karthikeya_karnataka@srmap.edu.in 22 73
+160 AP24110010161 MEDARA YUGANDHAR M B.Tech. Computer Science and Engineering 22-Dec-2006 D yugandhar_medara@srmap.edu.in 22 73
+161 AP24110010162 KUNDA GOKUL SAI M B.Tech. Computer Science and Engineering 07-Jun-2007 D gokulsai_kunda@srmap.edu.in 20 67
+162 AP24110010163 ARPAN PRAMANIK M B.Tech. Computer Science and Engineering 26-Oct-2005 D pramanik_arpan@srmap.edu.in 26 87
+163 AP24110010164 BADARLA UJWAL M B.Tech. Computer Science and Engineering 07-Nov-2006 D ujwal_badarla@srmap.edu.in 24 80
+164 AP24110010165 VEMULAPALLI NITEESH M B.Tech. Computer Science and Engineering 14-May-2006 D niteesh_vemulapalli@srmap.edu.in 25 83
+165 AP24110010166 POLUR ADARSH AMASAI M B.Tech. Computer Science and Engineering 28-Jan-2006 D adarshamasai_polur@srmap.edu.in 27 90
+166 AP24110010167 MANCHEM VENKATA SURYA SRI CHANDAN M B.Tech. Computer Science and Engineering 20-Nov-2005 D srichandan_manchem@srmap.edu.in 21 70
+167 AP24110010168 MALLIDI RUSHITHA SRI SAI MAHA LAKSHMI F B.Tech. Computer Science and Engineering 04-Apr-2007 B rushitha_mallidi@srmap.edu.in 18 60
+168 AP24110010169 KADIYAM UDAYASRI F B.Tech. Computer Science and Engineering 03-Dec-2006 B udayasri_kadiyam@srmap.edu.in 16 53
+169 AP24110010170 YALAMANCHILI HARSHA VARDHAN M B.Tech. Computer Science and Engineering 31-Jan-2007 D harshavardhan_yalamanchili@srmap.edu.in 17 57
+170 AP24110010171 MANYA SRIVASTAVA F B.Tech. Computer Science and Engineering 31-May-2004 D manya_srivastava@srmap.edu.in 25 83
+171 AP24110010172 REDDY NAGA NAYANA SRI F B.Tech. Computer Science and Engineering 07-Jul-2006 D naganayanasri_reddy@srmap.edu.in 19 63
+172 AP24110010173 ANSHUL RAJESH UPGANLAWAR M B.Tech. Computer Science and Engineering 09-May-2006 D anshul_upganlawar@srmap.edu.in 19 63
+173 AP24110010174 POGAKU LIKHITH M B.Tech. Computer Science and Engineering 27-Apr-2006 D likhith_pogaku@srmap.edu.in 21 70
+174 AP24110010175 AYUSH KUMAR M B.Tech. Computer Science and Engineering 01-Nov-2004 D ayushkumar_santhosh@srmap.edu.in 22 73
+175 AP24110010176 NUVVULA YESWANTH M B.Tech. Computer Science and Engineering 02-Jun-2007 D yeswanth_nuvvula@srmap.edu.in 23 77
+176 AP24110010177 KUNISETTY SOHITH M B.Tech. Computer Science and Engineering 26-Dec-2006 D sohith_kunisetty@srmap.edu.in 22 73
+177 AP24110010178 KAKILETI GEETHA RAJA RAJESWARI F B.Tech. Computer Science and Engineering 17-Feb-2007 D arajarajeswari_kakileti@srmap.edu.in 21 70
+178 AP24110010179 PALACHARLA PUJITHA F B.Tech. Computer Science and Engineering 16-Nov-2006 D pujitha_palacharla@srmap.edu.in 23 77
+179 AP24110010180 GADIPARTHI TEJASWINI F B.Tech. Computer Science and Engineering 10-Feb-2007 D tejaswini_gadiparthi@srmap.edu.in 24 80
+180 AP24110010181 SOMMAYADEEP SAHA M B.Tech. Computer Science and Engineering 11-Feb-2006 D sommayadeep_saha@srmap.edu.in 18 60
+181 AP24110010182 BHAUMIK HINUNIA M B.Tech. Computer Science and Engineering 19-Apr-2006 D bhaumik_hinunia@srmap.edu.in 26 87
+182 AP24110010183 SHAIK ZEESHAAN SUHAIL M B.Tech. Computer Science and Engineering 23-Dec-2006 D zeeshaansuhail_shaik@srmap.edu.in 29 97
+183 AP24110010184 NAGABHYRU VIJITHENDRA M B.Tech. Computer Science and Engineering 24-Aug-2007 D vijithendra_nagabhyru@srmap.edu.in 20 67
+184 AP24110010185 BARATAM VENKATA KARTHIKEYA M B.Tech. Computer Science and Engineering 12-Oct-2006 D karthikeya_baratam@srmap.edu.in 19 63
+185 AP24110010186 KAJA PRASANTH M B.Tech. Computer Science and Engineering 30-Apr-2007 D prasanth_kaja@srmap.edu.in 21 70
+186 AP24110010187 NAMBURI SAI PAVAN VYBHAV M B.Tech. Computer Science and Engineering 24-May-2006 D pavanvybhav_namburi@srmap.edu.in 26 87
+187 AP24110010188 REHAAN SUDHIR M B.Tech. Computer Science and Engineering 07-Jan-2007 D rehaan_sudhir@srmap.edu.in 25 83
+188 AP24110010189 JAVANGULA SAI SRAVANI F B.Tech. Computer Science and Engineering 15-Feb-2007 D saisravani_javangula@srmap.edu.in 23 77
+189 AP24110010190 MAJJI CHIDVILASH ASHOK RAJ M B.Tech. Computer Science and Engineering 31-Aug-2007 B chidvilash_majji@srmap.edu.in 20 67
+190 AP24110010191 DESU GEETH KRISHNA CHAITANYA M B.Tech. Computer Science and Engineering 25-Dec-2006 D krishnachaitanya_desu@srmap.edu.in 23 77
+191 AP24110010192 P HARSHVARDHAN REDDY M B.Tech. Computer Science and Engineering 18-Sep-2006 D harshvardhanreddy_p@srmap.edu.in 23 77
+192 AP24110010193 PRAKHAR RAJ M B.Tech. Computer Science and Engineering 09-Feb-2005 D prakharraj_sanjay@srmap.edu.in 24 80
+193 AP24110010194 BODEPUDI CHETHAN M B.Tech. Computer Science and Engineering 21-Mar-2007 B chethan_bodepudi@srmap.edu.in 20 67
+194 AP24110010195 BANGARI SAI SRUJANA F B.Tech. Computer Science and Engineering 02-Apr-2007 D saisrujana_bangari@srmap.edu.in 24 80
+195 AP24110010196 BANDLAMUDI NAGA SAI JAHNAVI F B.Tech. Computer Science and Engineering 26-Aug-2007 D jahnavi_bandlamudi@srmap.edu.in 26 87
+196 AP24110010197 PASUMARTHI SREERAM ASHISH M B.Tech. Computer Science and Engineering 07-Dec-2006 D ashish_pasumarthi@srmap.edu.in 22 73
+197 AP24110010198 NIMMADI DEVI BRAHMENDRA M B.Tech. Computer Science and Engineering 08-Jul-2007 D devibrahmendra_nimmadi@srmap.edu.in 19 63
+198 AP24110010199 MUVVA BHAVANA F B.Tech. Computer Science and Engineering 10-Dec-2007 D bhavana_muvva@srmap.edu.in 26 87
+199 AP24110010200 CHALASANI JANAKI RAM M B.Tech. Computer Science and Engineering 25-Nov-2006 D janakiram_chalasani@srmap.edu.in 20 67
+200 AP24110010201 NALABOLU CHARAN CHANDRA M B.Tech. Computer Science and Engineering 14-Aug-2006 D charanchandra_nalabolu@srmap.edu.in 22 73
+201 AP24110010202 BALUSU SYAM KIRAN CHOWDARY M B.Tech. Computer Science and Engineering 13-Aug-2006 D syamkiran_balusu@srmap.edu.in 9 30
+202 AP24110010203 SASI KIRAN LANKA M B.Tech. Computer Science and Engineering 31-Mar-2007 D sasikiran_lanka@srmap.edu.in 26 87
+203 AP24110010204 MEKA HARSHINI F B.Tech. Computer Science and Engineering 24-Jul-2006 D harshini_meka@srmap.edu.in 23 77
+204 AP24110010205 ATCHUTA SIDDHU AKHIL M B.Tech. Computer Science and Engineering 04-Oct-2006 D siddhuakhil_atchuta@srmap.edu.in 21 70
+205 AP24110010207 JALLI RATNA MAHITHA F B.Tech. Computer Science and Engineering 21-Jun-2006 D ratnamahitha_jalli@srmap.edu.in 18 60
+206 AP24110010208 POTLURI RISHITHA SEKHAR F B.Tech. Computer Science and Engineering 30-Nov-2006 B rishithasekhar_potluri@srmap.edu.in 24 80
+207 AP24110010209 NARADASU PURVANSH M B.Tech. Computer Science and Engineering 30-Jul-2006 D purvansh_naradasu@srmap.edu.in 24 80
+208 AP24110010210 DODDAPANENI ARCHISHMA F B.Tech. Computer Science and Engineering 18-May-2007 D archishma_doddapaneni@srmap.edu.in 27 90
+209 AP24110010211 VADAVALLI SARVANI F B.Tech. Computer Science and Engineering 02-Jul-2006 D sarvani_vadavalli@srmap.edu.in 25 83
+210 AP24110010212 JALADI OMKAR ESWAR M B.Tech. Computer Science and Engineering 21-Apr-2007 D omkareswar_jaladi@srmap.edu.in 1 3
+211 AP24110010213 KALVA SAI VARDHAN M B.Tech. Computer Science and Engineering 19-Feb-2007 D saivardhan_kalva@srmap.edu.in 24 80
+212 AP24110010214 MATURU RENUKA F B.Tech. Computer Science and Engineering 19-Aug-2007 D renuka_maturu@srmap.edu.in 19 63
+213 AP24110010215 PUDI DIMPLE PRIYA F B.Tech. Computer Science and Engineering 19-Jun-2007 D dimplepriya_pudi@srmap.edu.in 24 80
+214 AP24110010216 SHAIK ABDUL KALEEM M B.Tech. Computer Science and Engineering 10-Nov-2006 D abdulkaleem_shaik@srmap.edu.in 18 60
+215 AP24110010217 MANDADAPU JAYA VENKATESWARA RAO M B.Tech. Computer Science and Engineering 25-Nov-2006 D jayavenkateswararao_mandadapu@srmap.edu.in 23 77
+216 AP24110010218 MANDA LAKSHMI SATHWIK M B.Tech. Computer Science and Engineering 15-Nov-2006 D lakshmisathwik_manda@srmap.edu.in 15 50
+217 AP24110010219 MEDAPATI JAGAN SURYA SATISH REDDY M B.Tech. Computer Science and Engineering 03-Oct-2006 D jagansuryasatish_medapati@srmap.edu.in 19 63
+218 AP24110010220 SHAIK HANNU M B.Tech. Computer Science and Engineering 03-Aug-2005 D hannu_shaik@srmap.edu.in 23 77
+219 AP24110010221 KAPUSETTI GIRI M B.Tech. Computer Science and Engineering 10-May-2007 D giri_kapusetti@srmap.edu.in 20 67
+220 AP24110010222 KOPPURAVURI AKHIL M B.Tech. Computer Science and Engineering 21-Jun-2006 D akhil_koppuravuri@srmap.edu.in 19 63
+221 AP24110010223 C NARESH M B.Tech. Computer Science and Engineering 30-Apr-2007 D naresh_c@srmap.edu.in 23 77
+222 AP24110010224 RAMAYANAPU JAGATH M B.Tech. Computer Science and Engineering 27-Aug-2007 D jagath_ramayanapu@srmap.edu.in 23 77
+223 AP24110010225 MUGA ASHRITHA F B.Tech. Computer Science and Engineering 24-Feb-2007 D ashritha_muga@srmap.edu.in 21 70
+224 AP24110010226 KALLURI RISHENDRA M B.Tech. Computer Science and Engineering 24-Sep-2006 D rishendra_kalluri@srmap.edu.in 24 80
+225 AP24110010227 SUNKARA SATYA VASU M B.Tech. Computer Science and Engineering 27-Nov-2004 D satyavasu_sunkara@srmap.edu.in 19 63
+226 AP24110010228 KOMMINENI GEETESH CHOWDARY M B.Tech. Computer Science and Engineering 13-Jul-2006 B geetesh_kommineni@srmap.edu.in 22 73
+227 AP24110010229 VINTHA HEM VIJAY DURGA REDDY M B.Tech. Computer Science and Engineering 01-Mar-2007 E hemvijaydurga_vintha@srmap.edu.in 19 63
+228 AP24110010230 KANTETY JAYA RAM M B.Tech. Computer Science and Engineering 09-May-2007 E jayaram_kantety@srmap.edu.in 22 73
+229 AP24110010231 KODIPALLI VENU MADHAV M B.Tech. Computer Science and Engineering 04-Nov-2006 E venumadhav_kodipalli@srmap.edu.in 23 77
+230 AP24110010232 Y LAKSHMI VENKATA SURYA ADITHYA VARDHAN M B.Tech. Computer Science and Engineering 01-Jan-2007 E suryaadithyavardhan_y@srmap.edu.in 18 60
+231 AP24110010233 SAMEER SINGH M B.Tech. Computer Science and Engineering 24-May-2005 E sameer_singh@srmap.edu.in 25 83
+232 AP24110010234 AKKISETTI VARSHINI F B.Tech. Computer Science and Engineering 08-Nov-2006 E varshini_akkisetti@srmap.edu.in 25 83
+233 AP24110010235 LUCKY KUMAR M B.Tech. Computer Science and Engineering 08-Aug-2006 E luckykumar_manoj@srmap.edu.in 22 73
+234 AP24110010236 BODDEPALLI JAIDEEP M B.Tech. Computer Science and Engineering 24-Mar-2006 E jaideep_boddepalli@srmap.edu.in 27 90
+235 AP24110010237 KANDRU ROHITH M B.Tech. Computer Science and Engineering 05-Oct-2005 E rohith_kandru@srmap.edu.in 22 73
+236 AP24110010238 VANGIPURAPU KEERTHI SAI F B.Tech. Computer Science and Engineering 25-Sep-2005 E keerthisai_vangipurapu@srmap.edu.in 24 80
+237 AP24110010239 SWATILAGNA MISHRA F B.Tech. Computer Science and Engineering 23-Nov-2006 B swatilagna_mishra@srmap.edu.in 26 87
+238 AP24110010240 ANJAY CHAUBEY M B.Tech. Computer Science and Engineering 14-May-2005 E anjay_chaubey@srmap.edu.in 22 73
+239 AP24110010241 TALLURI NIKHILA F B.Tech. Computer Science and Engineering 31-May-2007 E nikhila_talluri@srmap.edu.in 22 73
+240 AP24110010242 VATTIGUNTA THRIVEDH REDDY M B.Tech. Computer Science and Engineering 15-Apr-2006 E thrivedh_vattigunta@srmap.edu.in 14 47
+241 AP24110010243 HITESH SAI BITRA M B.Tech. Computer Science and Engineering 27-Sep-2005 E hiteshsaibitra_mohanarao@srmap.edu.in 27 90
+242 AP24110010244 GOPARAJU B V SATHVIK M B.Tech. Computer Science and Engineering 25-Aug-2007 E bvsathvik_goparaju@srmap.edu.in 23 77
+243 AP24110010245 M KARTHIKVIGNESH M B.Tech. Computer Science and Engineering 29-Jan-2007 E karthikvignesh_m@srmap.edu.in 25 83
+244 AP24110010246 SAMMETA VISWAS SAI TULASI RAM M B.Tech. Computer Science and Engineering 01-Oct-2007 E viswassai_sammeta@srmap.edu.in 21 70
+245 AP24110010247 REDDY DHANANJAY M B.Tech. Computer Science and Engineering 13-Jun-2007 E dhananjay_reddy@srmap.edu.in 20 67
+246 AP24110010248 VEEKSHANA GUMMADI F B.Tech. Computer Science and Engineering 18-Feb-2007 E veekshana_gummadi@srmap.edu.in 22 73
+247 AP24110010249 RAKSHA R BHAGWAT F B.Tech. Computer Science and Engineering 07-Nov-2006 E bhagwat_raksha@srmap.edu.in 28 93
+248 AP24110010250 CHAVA KOUSHIK M B.Tech. Computer Science and Engineering 18-Aug-2006 E koushik_chava@srmap.edu.in 21 70
+249 AP24110010251 AYUSH KUMAR M B.Tech. Computer Science and Engineering 29-Jul-2006 E ayushkumar_yudhisthir@srmap.edu.in 25 83
+250 AP24110010252 SADHU VARSHITHA F B.Tech. Computer Science and Engineering 17-Aug-2007 E varshitha_sadhu@srmap.edu.in 22 73
+251 AP24110010253 HIMAVARSHINI JUNNURI F B.Tech. Computer Science and Engineering 27-Jun-2006 E himavarshini_junnuri@srmap.edu.in 24 80
+252 AP24110010254 SABYASACHI MISHRA M B.Tech. Computer Science and Engineering 10-Nov-2006 B sabyasachi_mishra@srmap.edu.in 24 80
+253 AP24110010255 MOGILIGIDDE THANUSRI F B.Tech. Computer Science and Engineering 25-Sep-2006 E thanusri_mogiligidde@srmap.edu.in 25 83
+254 AP24110010256 GOPIDESI VENKATA KRISHNA NISHANTH M B.Tech. Computer Science and Engineering 19-Sep-2006 E nishanth_gopidesi@srmap.edu.in A 0
+255 AP24110010257 PADALA REYANSH M B.Tech. Computer Science and Engineering 19-Nov-2006 E reyansh_padala@srmap.edu.in 22 73
+256 AP24110010258 KONAKALLA NAGA VENKATA HANUMAN YAAGNESH M B.Tech. Computer Science and Engineering 08-Apr-2007 E yaagnesh_konakalla@srmap.edu.in 13 43
+257 AP24110010259 VEJANDLA BHAVYA SRI F B.Tech. Computer Science and Engineering 24-Nov-2006 E bhavyasri_vejandla@srmap.edu.in 23 77
+258 AP24110010260 BHOGI SHANMUKHA TAGORE M B.Tech. Computer Science and Engineering 14-Dec-2006 E shanmukhatagore_bhogi@srmap.edu.in 20 67
+259 AP24110010261 TALLURU NAGA PRASANTH CHOWDARY M B.Tech. Computer Science and Engineering 25-Jul-2007 E nagaprasanth_talluru@srmap.edu.in 19 63
+260 AP24110010262 GHANTASALA SAI VAISHNAVI F B.Tech. Computer Science and Engineering 09-Mar-2007 E saivaishnavi_ghantasala@srmap.edu.in 26 87
+261 AP24110010263 CHITRAPU SAI SUMANA SREE F B.Tech. Computer Science and Engineering 29-Aug-2007 E saisumanasree_chitrapu@srmap.edu.in 20 67
+262 AP24110010264 VEMURI SUHITHA F B.Tech. Computer Science and Engineering 22-Jan-2007 E suhitha_vemuri@srmap.edu.in 25 83
+263 AP24110010265 TADAKAMALLA MEGHANA F B.Tech. Computer Science and Engineering 17-Mar-2007 B meghana_tadakamalla@srmap.edu.in 25 83
+264 AP24110010266 YASAM SARAYU SRI LAKSHMI F B.Tech. Computer Science and Engineering 07-Jun-2007 E sarayusrilakshmi_yasam@srmap.edu.in 21 70
+265 AP24110010267 RAMISETTY KAPISH SAI M B.Tech. Computer Science and Engineering 19-May-2007 E kapishsai_ramisetty@srmap.edu.in 22 73
+266 AP24110010268 CHENNA TEJASWI F B.Tech. Computer Science and Engineering 29-May-2007 E tejaswi_chenna@srmap.edu.in 16 53
+267 AP24110010269 VENTRAPRAGADA VARSHIT M B.Tech. Computer Science and Engineering 18-May-2007 B varshit_ventrapragada@srmap.edu.in 21 70
+268 AP24110010270 AARUSH DUBEY M B.Tech. Computer Science and Engineering 09-Nov-2004 E aarush_dubey@srmap.edu.in 27 90
+269 AP24110010271 CHINTHOTI HARIKA CHOWDARY F B.Tech. Computer Science and Engineering 10-Nov-2006 E harika_chinthoti@srmap.edu.in 20 67
+270 AP24110010272 PRATIK KUMAR M B.Tech. Computer Science and Engineering 19-Jul-2006 B pratikkumar_saroj@srmap.edu.in 21 70
+271 AP24110010273 GUTTULA KAUSHAL KARTHIKEYA M B.Tech. Computer Science and Engineering 23-Apr-2007 E kaushalkarthikeya_guttula@srmap.edu.in 25 83
+272 AP24110010274 JERRI RUPA SRI F B.Tech. Computer Science and Engineering 22-Aug-2006 E rupasri_jerri@srmap.edu.in 24 80
+273 AP24110010275 ANNAM JOGENDRA VENKATA SAI KUMAR M B.Tech. Computer Science and Engineering 05-Sep-2006 E jogendra_annam@srmap.edu.in 24 80
+274 AP24110010276 ANDHAVARAPU BHARATH M B.Tech. Computer Science and Engineering 21-Aug-2007 E bharath_andhavarapu@srmap.edu.in 18 60
+275 AP24110010277 KATTA MAHITHA CHOWDARY F B.Tech. Computer Science and Engineering 18-Jul-2007 E mahitha_katta@srmap.edu.in 27 90
+276 AP24110010278 KORNE SANDHYA RANI F B.Tech. Computer Science and Engineering 17-Jun-2006 E sandhyarani_korne@srmap.edu.in 21 70
+277 AP24110010279 SHAIK IRSHAD M B.Tech. Computer Science and Engineering 21-Apr-2006 E irshad_shaik@srmap.edu.in 20 67
+278 AP24110010280 PANCHAKATLA LIKHITHA PRIYA F B.Tech. Computer Science and Engineering 30-Dec-2006 E likhithapriya_panchakatla@srmap.edu.in 26 87
+279 AP24110010281 NARRA DEVIJA F B.Tech. Computer Science and Engineering 21-Feb-2007 E devija_narra@srmap.edu.in 24 80
+280 AP24110010282 AVUTHU NEEL KOWSHIK REDDY M B.Tech. Computer Science and Engineering 15-Jan-2007 E neelkowshik_avuthu@srmap.edu.in 22 73
+281 AP24110010283 MUKESH KRISHNA RAYUDU M B.Tech. Computer Science and Engineering 13-Feb-2006 E mukeshkrishna_rayudu@srmap.edu.in 26 87
+282 AP24110010284 OM AWASTHI M B.Tech. Computer Science and Engineering 26-May-2006 E om_awasthi@srmap.edu.in 23 77
+283 AP24110010285 ANUMANCHIPALLE AKHILESH M B.Tech. Computer Science and Engineering 08-Jun-2006 E akhilesh_anumanchipalle@srmap.edu.in 25 83
+284 AP24110010286 MALASANI NANDHA NIVAS M B.Tech. Computer Science and Engineering 08-Jul-2006 E nandhanivas_malasani@srmap.edu.in 24 80
+285 AP24110010287 KANAKAMEDALA TANVITHA F B.Tech. Computer Science and Engineering 03-Aug-2006 E tanvitha_kanakamedala@srmap.edu.in 24 80
+286 AP24110010288 KESANA AKSHAY NIRMAL M B.Tech. Computer Science and Engineering 08-Dec-2006 B akshaynirmal_kesana@srmap.edu.in 24 80
+287 AP24110010289 MUPPAVARAPU ROHITH CHANDRA M B.Tech. Computer Science and Engineering 13-Oct-2007 B rohithchandra_muppavarapu@srmap.edu.in 17 57
+288 AP24110010290 KOLLI DIVYA F B.Tech. Computer Science and Engineering 07-Apr-2006 B divya_kolli@srmap.edu.in 22 73
+289 AP24110010291 TADI SAI DEEP REDDY M B.Tech. Computer Science and Engineering 22-Apr-2006 E saideepreddy_tadi@srmap.edu.in 24 80
+290 AP24110010292 GURRAM LEELA KRISHNAN M B.Tech. Computer Science and Engineering 30-Dec-2006 E leelakrishnan_gurram@srmap.edu.in 21 70
+291 AP24110010293 NALLAPATI KOUSHIK M B.Tech. Computer Science and Engineering 14-Oct-2006 E koushik_nallapati@srmap.edu.in 20 67
+292 AP24110010294 GODAVARTHI BABY SIVA LALITHA F B.Tech. Computer Science and Engineering 04-Sep-2006 E lalitha_godavarthi@srmap.edu.in 18 60
+293 AP24110010295 BODAPATI PRUDHVI M B.Tech. Computer Science and Engineering 16-Mar-2006 E prudhvi_bodapati@srmap.edu.in 9 30
+294 AP24110010296 PATHIPAATI VIJAY NARASIMHA M B.Tech. Computer Science and Engineering 14-Sep-2006 E vijay_pathipaati@srmap.edu.in A 0
+295 AP24110010297 MEKA KOWSHICK REDDY M B.Tech. Computer Science and Engineering 28-Mar-2007 B kowshick_meka@srmap.edu.in 24 80
+296 AP24110010298 KONGARA KEERTHANA F B.Tech. Computer Science and Engineering 19-Jun-2007 E keerthana_kongara@srmap.edu.in 24 80
+297 AP24110010299 JASMITHA KOLLURU F B.Tech. Computer Science and Engineering 27-Aug-2007 E jasmitha_kolluru@srmap.edu.in 24 80
+298 AP24110010300 YENUGUDHATI MRUDHUL M B.Tech. Computer Science and Engineering 11-Dec-2006 E mrudhul_yenugudhati@srmap.edu.in 24 80
+299 AP24110010301 MOHAMMAD AYMAN M B.Tech. Computer Science and Engineering 07-Nov-2006 E ayman_mohammad@srmap.edu.in 24 80
+300 AP24110010302 VUYYALA SAI MADHULIKA F B.Tech. Computer Science and Engineering 26-Apr-2007 E saimadhulika_vuyyala@srmap.edu.in 21 70
+301 AP24110010303 ARAVAPALLI SIRI CHANDANA F B.Tech. Computer Science and Engineering 07-Sep-2006 E sirichandana_aravapalli@srmap.edu.in 19 63
+302 AP24110010304 YANDRAPRAGADA HARI M B.Tech. Computer Science and Engineering 28-May-2006 E hari_yandrapragada@srmap.edu.in 19 63
+303 AP24110010305 PALACHARLA RAVI TEJA M B.Tech. Computer Science and Engineering 08-Mar-2007 F raviteja_palacharla@srmap.edu.in 23 77
+304 AP24110010306 KOSARAJU RISHITHA SREE F B.Tech. Computer Science and Engineering 25-Sep-2006 F rishithasree_kosaraju@srmap.edu.in 19 63
+305 AP24110010307 POLISETTY VENKATA JAGADEESH M B.Tech. Computer Science and Engineering 20-Apr-2006 F jagadeesh_polisetty@srmap.edu.in 19 63
+306 AP24110010308 MYLAVARAPU L SIVA JYOTHI LIKHITHA GANGA F B.Tech. Computer Science and Engineering 09-Oct-2006 F likhithaganga_mylavarapu@srmap.edu.in 19 63
+307 AP24110010309 KHANDE NIHAR M B.Tech. Computer Science and Engineering 16-Jul-2006 F nihar_khande@srmap.edu.in 22 73
+308 AP24110010310 POLURU CHINMAYEE F B.Tech. Computer Science and Engineering 20-Feb-2007 F chinmayee_poluru@srmap.edu.in 26 87
+309 AP24110010311 MOHAMMAD ALI M B.Tech. Computer Science and Engineering 30-May-2005 F mohammad_ali@srmap.edu.in 18 60
+310 AP24110010312 EATI VARSHITH M B.Tech. Computer Science and Engineering 03-Jan-2007 - varshith_eati@srmap.edu.in 27 90
+311 AP24110010313 SEEMAKURTHI AKSHAYA SAI KRUTHE F B.Tech. Computer Science and Engineering 19-Apr-2007 F akshaya_seemakurthi@srmap.edu.in 22 73
+312 AP24110010314 MANIKYALA RAM THANUSH REDDY M B.Tech. Computer Science and Engineering 20-Nov-2006 F ramthanush_manikyala@srmap.edu.in 20 67
+313 AP24110010315 GUNDA VARSHITH SAI RAM M B.Tech. Computer Science and Engineering 01-Jan-2007 F varshithsairam_gunda@srmap.edu.in 23 77
+314 AP24110010316 YERRAGOPULA RUPA F B.Tech. Computer Science and Engineering 08-Mar-2007 F rupa_yerragopula@srmap.edu.in 16 53
+315 AP24110010317 SACHIN KUMAR M B.Tech. Computer Science and Engineering 01-Jan-2005 F sachinkumar_sanjeev@srmap.edu.in 21 70
+316 AP24110010318 PULA BALAJI ABHI CHANDRA SAI M B.Tech. Computer Science and Engineering 11-Jul-2006 F balajiabhichandrasai_pula@srmap.edu.in 22 73
+317 AP24110010319 BANDI NISHKAL RAJ M B.Tech. Computer Science and Engineering 22-Mar-2007 F nishkalraj_bandi@srmap.edu.in 20 67
+318 AP24110010320 KANAMARLAPUDI NAGA SAI JAYRAM M B.Tech. Computer Science and Engineering 06-Jun-2007 - jayram_kanamarlapudi@srmap.edu.in 17 57
+319 AP24110010321 LOYA LAKSHMI RAM SAI SHANMUKH M B.Tech. Computer Science and Engineering 22-Feb-2007 F ramsaishanmukh_loya@srmap.edu.in 22 73
+320 AP24110010322 ADUSUMILLI VENKATA JITHIN SAI PRANET M B.Tech. Computer Science and Engineering 25-Mar-2006 B saipranet_adusumilli@srmap.edu.in 25 83
+321 AP24110010323 PACHHIPULUSU VENKATA SIVA NAGA SAI ARYAN M B.Tech. Computer Science and Engineering 06-Jun-2007 F aryan_pachhipulusu@srmap.edu.in 15 50
+322 AP24110010324 KADIYALA BHAVANI PRASAD M B.Tech. Computer Science and Engineering 01-Oct-2006 F bhavaniprasad_kadiyala@srmap.edu.in 21 70
+323 AP24110010325 PRADYUN DEVIDAS NIMAJE M B.Tech. Computer Science and Engineering 14-Sep-2006 F pradyun_nimaje@srmap.edu.in 21 70
+324 AP24110010326 ARAVAPALLI MADHUKAR NAGA SANJAY M B.Tech. Computer Science and Engineering 26-Apr-2007 F sanjay_aravapalli@srmap.edu.in 19 63
+325 AP24110010327 CHINTALA NIKHIL KUMAR M B.Tech. Computer Science and Engineering 10-Mar-2007 F nikhilkumar_chintala@srmap.edu.in 26 87
+326 AP24110010328 AMBATI AKKHASH SAYE M B.Tech. Computer Science and Engineering 10-Oct-2006 F akkhashsaye_ambati@srmap.edu.in 21 70
+327 AP24110010329 GATTI VENKATA SAI MANVEER M B.Tech. Computer Science and Engineering 16-Dec-2006 F manveer_gatti@srmap.edu.in 17 57
+328 AP24110010330 RAMINEDI VENKATA SAI SATHWIK M B.Tech. Computer Science and Engineering 23-Sep-2006 F sathwik_raminedi@srmap.edu.in 26 87
+329 AP24110010331 MD AFSAR M B.Tech. Computer Science and Engineering 20-Apr-2005 F mdafsar_noor@srmap.edu.in 25 83
+330 AP24110010332 SHAIK ROSHAN M B.Tech. Computer Science and Engineering 04-Nov-2006 F roshan_shaik@srmap.edu.in 22 73
+331 AP24110010333 ADITYA KUMAR M B.Tech. Computer Science and Engineering 12-Mar-2005 F adityakumar_mukesh@srmap.edu.in 19 63
+332 AP24110010334 CHARITHA SAI KOLLIPARA F B.Tech. Computer Science and Engineering 14-May-2007 F charithasai_kollipara@srmap.edu.in 25 83
+333 AP24110010335 ALOK RAJ M B.Tech. Computer Science and Engineering 06-Dec-2006 F alokraj_shiv@srmap.edu.in 21 70
+334 AP24110010336 KAPA HARVIN M B.Tech. Computer Science and Engineering 23-Apr-2007 F harvin_kapa@srmap.edu.in 24 80
+335 AP24110010337 ADITYA KASHYAP M B.Tech. Computer Science and Engineering 27-Jan-2006 F aditya_kashyap@srmap.edu.in 24 80
+336 AP24110010338 TAMMANENI ANJANI F B.Tech. Computer Science and Engineering 27-Jan-2007 F anjani_tammaneni@srmap.edu.in 26 87
+337 AP24110010339 RAHUL KUMAR M B.Tech. Computer Science and Engineering 17-Jun-2005 F rahulkumar_rajesh@srmap.edu.in 23 77
+338 AP24110010340 MANYAM LAKSHMI SRINIVAS M B.Tech. Computer Science and Engineering 02-Dec-2006 F srinivas_manyam@srmap.edu.in 22 73
+339 AP24110010341 APRAM KAUR BHATIA F B.Tech. Computer Science and Engineering 08-Jul-2006 F apramkaur_bhatia@srmap.edu.in 29 97
+340 AP24110010342 SENISETTY HARSHINI F B.Tech. Computer Science and Engineering 18-Oct-2006 F harshini_senisetty@srmap.edu.in 20 67
+341 AP24110010343 VEGIRAJU SRUJAY VARMA M B.Tech. Computer Science and Engineering 28-Oct-2006 F srujayvarma_vegiraju@srmap.edu.in 22 73
+342 AP24110010344 KEYA MITTAL F B.Tech. Computer Science and Engineering 08-Mar-2006 B keya_mittal@srmap.edu.in 23 77
+343 AP24110010345 SHAIK BASITH ALI M B.Tech. Computer Science and Engineering 07-May-2007 F basithali_shaik@srmap.edu.in 22 73
+344 AP24110010346 BHUMI SENGAR F B.Tech. Computer Science and Engineering 19-Jul-2004 F bhumi_sengar@srmap.edu.in 24 80
+345 AP24110010347 THOKA NAGAVARDHAN M B.Tech. Computer Science and Engineering 13-Sep-2006 F nagavardhan_thoka@srmap.edu.in 16 53
+346 AP24110010348 CHENNAM SURYA VENKATA NAGA PAVAN VIGHNESH M B.Tech. Computer Science and Engineering 22-May-2006 F vighnesh_chennam@srmap.edu.in A 0
+347 AP24110010349 GOWRNENI POOJITHA F B.Tech. Computer Science and Engineering 24-Sep-2006 F poojitha_gowrneni@srmap.edu.in 20 67
+348 AP24110010350 ADITYA SHARMA M B.Tech. Computer Science and Engineering 18-Jan-2007 F adityasharma_manoj@srmap.edu.in 19 63
+349 AP24110010351 RAO MANASA F B.Tech. Computer Science and Engineering 02-Jun-2006 F manasa_rao@srmap.edu.in 24 80
+350 AP24110010352 VADDI MURALI MANOHAR M B.Tech. Computer Science and Engineering 13-Nov-2006 F muralimanohar_vaddi@srmap.edu.in 23 77
+351 AP24110010353 RAPURU VENKATA RISHIK M B.Tech. Computer Science and Engineering 29-Jan-2007 F venkatarishik_rapuru@srmap.edu.in 16 53
+352 AP24110010354 ABHISHEK ASHOKBHAI MANEK M B.Tech. Computer Science and Engineering 11-Dec-2005 F abhishek_manek@srmap.edu.in 27 90
+353 AP24110010355 SABBINENI BHASWANTH SAI M B.Tech. Computer Science and Engineering 28-Oct-2006 F bhaswanthsai_sabbineni@srmap.edu.in A 0
+354 AP24110010356 SANKALP TIWARI M B.Tech. Computer Science and Engineering 23-Jun-2006 F sankalp_tiwari@srmap.edu.in 24 80
+355 AP24110010357 ADUSUMALLI VENKATA CHAITANYA M B.Tech. Computer Science and Engineering 12-Jul-2006 F venkatachaitanya_adusumalli@srmap.edu.in 20 67
+356 AP24110010358 IKI YAMINI F B.Tech. Computer Science and Engineering 26-Jul-2007 F yamini_iki@srmap.edu.in 20 67
+357 AP24110010359 KORAPOLA SANDEEP M B.Tech. Computer Science and Engineering 25-Dec-2006 F sandeep_korapola@srmap.edu.in 23 77
+358 AP24110010360 GNANVI V F B.Tech. Computer Science and Engineering 29-May-2006 F gnanvi_v@srmap.edu.in 27 90
+359 AP24110010361 GADDANTI SAI SARAN M B.Tech. Computer Science and Engineering 02-Nov-2006 - saisaran_gaddanti@srmap.edu.in 19 63
+360 AP24110010362 VANAMA SHASHANK M B.Tech. Computer Science and Engineering 16-Aug-2007 F shashank_vanama@srmap.edu.in 11 37
+361 AP24110010363 DEBOSMITA MUKHOPADHYAY F B.Tech. Computer Science and Engineering 12-Jun-2003 F debosmita_mukhopadhyay@srmap.edu.in 28 93
+362 AP24110010364 KOSANA HEMANTH SAI M B.Tech. Computer Science and Engineering 21-Nov-2007 F hemanthsai_kosana@srmap.edu.in 13 43
+363 AP24110010365 DHULIPALLA KIRAN KUMAR M B.Tech. Computer Science and Engineering 06-Dec-2006 - kirankumar_dhulipalla@srmap.edu.in 21 70
+364 AP24110010366 KURETI SAI MEGHANA F B.Tech. Computer Science and Engineering 18-Sep-2006 B saimeghana_kureti@srmap.edu.in 15 50
+365 AP24110010367 JULURU GIRISHA VARSHINI F B.Tech. Computer Science and Engineering 04-Jul-2007 F girishavarshini_juluru@srmap.edu.in 27 90
+366 AP24110010368 KOTA SAI GANESH M B.Tech. Computer Science and Engineering 13-Oct-2006 F saiganesh_kota@srmap.edu.in 14 47
+367 AP24110010369 KATAKAM BALA SESHA SAI M B.Tech. Computer Science and Engineering 23-Dec-2006 F balaseshasai_katakam@srmap.edu.in 18 60
+368 AP24110010370 GUMMADI VENKATA SAI CHARITH M B.Tech. Computer Science and Engineering 29-Dec-2006 F charith_gummadi@srmap.edu.in 26 87
+369 AP24110010371 KATRAGADDA TANVI SRI F B.Tech. Computer Science and Engineering 16-Nov-2006 B tanvisri_katragadda@srmap.edu.in 23 77
+370 AP24110010372 MOHAMMAD SHOAIB M B.Tech. Computer Science and Engineering 21-Jun-2007 F shoaib_mohammad@srmap.edu.in 20 67
+371 AP24110010373 KALLURI LASYA CHOWDARY F B.Tech. Computer Science and Engineering 01-Sep-2007 F lasyachowdary_kalluri@srmap.edu.in 19 63
+372 AP24110010374 YARLAGADDA HEM SAI CHARAN M B.Tech. Computer Science and Engineering 27-Jun-2006 F hemsaicharan_yarlagadda@srmap.edu.in 14 47
+373 AP24110010375 TANGUDU PAVAN KUMAR M B.Tech. Computer Science and Engineering 28-Jul-2006 F pavankumar_tangudu@srmap.edu.in 21 70
+374 AP24110010376 BELLI VIVEK M B.Tech. Computer Science and Engineering 28-May-2006 F vivek_belli@srmap.edu.in 22 73
+375 AP24110010377 CHANDUPATLA ROHAN M B.Tech. Computer Science and Engineering 09-Aug-2006 F rohan_chandupatla@srmap.edu.in 25 83
+376 AP24110010378 KOLLIPARA RITISH M B.Tech. Computer Science and Engineering 17-Sep-2006 F ritish_kollipara@srmap.edu.in 20 67
+377 AP24110010379 PIYUSH VERMA M B.Tech. Computer Science and Engineering 18-May-2005 F piyush_verma@srmap.edu.in 22 73
+378 AP24110010380 VEMULA SRI VIVEK M B.Tech. Computer Science and Engineering 24-Apr-2007 G srivivek_vemula@srmap.edu.in 24 80
+379 AP24110010381 PARIMI SRI SUJITH M B.Tech. Computer Science and Engineering 05-Oct-2006 G srisujith_parimi@srmap.edu.in 22 73
+380 AP24110010382 SURA VEDHAABHIRAM REDDY M B.Tech. Computer Science and Engineering 18-May-2007 G vedhaabhiram_sura@srmap.edu.in 23 77
+381 AP24110010383 GANDURI SAI PRAVALLIKA F B.Tech. Computer Science and Engineering 16-Nov-2006 G saipravallika_ganduri@srmap.edu.in 26 87
+382 AP24110010384 NAMALA BHARATH CHOWDARY M B.Tech. Computer Science and Engineering 25-Sep-2006 G bharath_namala@srmap.edu.in 22 73
+383 AP24110010385 KANDIMALLA GUNA SEKHAR M B.Tech. Computer Science and Engineering 06-Sep-2006 G gunasekhar_kandimalla@srmap.edu.in 21 70
+384 AP24110010386 AKSHITA MODI F B.Tech. Computer Science and Engineering 14-Jan-2006 G akshita_modi@srmap.edu.in 23 77
+385 AP24110010387 PALLAPOLU VENKATA RITHWIK REDDY M B.Tech. Computer Science and Engineering 29-Jan-2007 G venkatarithwik_pallapolu@srmap.edu.in 14 47
+386 AP24110010388 ARIGELA JNANA PRASANNA F B.Tech. Computer Science and Engineering 19-May-2007 G jnanaprasanna_arigela@srmap.edu.in 17 57
+387 AP24110010389 SUDA AKHILA F B.Tech. Computer Science and Engineering 30-Sep-2006 G akhila_suda@srmap.edu.in 21 70
+388 AP24110010390 TADEPALLI LAKSHMI MOHANA F B.Tech. Computer Science and Engineering 14-Nov-2006 G mohana_tadepalli@srmap.edu.in 18 60
+389 AP24110010391 LANKALAPALLI KRISHNA PRAJEETH M B.Tech. Computer Science and Engineering 15-Jun-2006 G prajeeth_lankalapalli@srmap.edu.in 27 90
+390 AP24110010392 NALLURI PRANATHI F B.Tech. Computer Science and Engineering 16-Nov-2006 G pranathi_nalluri@srmap.edu.in 26 87
+391 AP24110010393 ANKUR SAINI M B.Tech. Computer Science and Engineering 15-Sep-2005 G ankursaini_rajendra@srmap.edu.in 24 80
+392 AP24110010394 KOTHARU RUSHMA CHOWDARY F B.Tech. Computer Science and Engineering 25-Jun-2007 G rushma_kotharu@srmap.edu.in 19 63
+393 AP24110010395 DAMARLA JAYA TEJA M B.Tech. Computer Science and Engineering 27-Aug-2007 - jayateja_damarla@srmap.edu.in 22 73
+394 AP24110010396 NEERUKATTU CHARAN M B.Tech. Computer Science and Engineering 12-May-2005 B charan_neerukattu@srmap.edu.in 22 73
+395 AP24110010397 KODRU SURYA TEJA M B.Tech. Computer Science and Engineering 15-Jul-2006 G suryateja_kodru@srmap.edu.in 20 67
+396 AP24110010398 MARRU MAHISRI F B.Tech. Computer Science and Engineering 25-May-2007 G mahisri_marru@srmap.edu.in 27 90
+397 AP24110010399 SARVEPALLI REVANTH KRISHNA M B.Tech. Computer Science and Engineering 19-Nov-2006 B revanthkrishna_sarvepalli@srmap.edu.in 20 67
+398 AP24110010400 MD AASHIR AFTAB M B.Tech. Computer Science and Engineering 03-Jun-2006 B aashiraftab_md@srmap.edu.in 29 97
+399 AP24110010401 CHALLA BINDU MADHAVI REDDY F B.Tech. Computer Science and Engineering 02-Sep-2006 G bindumadhavi_challa@srmap.edu.in 24 80
+400 AP24110010402 ISHAAN GHOSH M B.Tech. Computer Science and Engineering 22-Feb-2005 G ishaan_ghosh@srmap.edu.in 28 93
+401 AP24110010403 PREM SAI THOTAKURA M B.Tech. Computer Science and Engineering 17-Mar-2006 G premsai_thotakura@srmap.edu.in 26 87
+402 AP24110010404 OM MITTAL M B.Tech. Computer Science and Engineering 04-Aug-2006 G om_mittal@srmap.edu.in 26 87
+403 AP24110010405 MALLAVARAPU SUHAAS CHOUDARY M B.Tech. Computer Science and Engineering 01-Dec-2006 G suhaas_mallavarapu@srmap.edu.in 20 67
+404 AP24110010406 KANNETI SUDHEER M B.Tech. Computer Science and Engineering 30-May-2005 G sudheer_kanneti@srmap.edu.in 19 63
+405 AP24110010407 SAMANA PRANAV SAKETH M B.Tech. Computer Science and Engineering 08-May-2006 G pranavsaketh_samana@srmap.edu.in 28 93
+406 AP24110010408 SHASHAWAT SHASHANK M B.Tech. Computer Science and Engineering 02-Feb-2006 G shashawat_shashank@srmap.edu.in 24 80
+407 AP24110010409 PASUPULETI VENKATESWA RAO M B.Tech. Computer Science and Engineering 11-Sep-2006 G venkateswarao_pasupuleti@srmap.edu.in 19 63
+408 AP24110010410 DIVYANSH PARASHAR M B.Tech. Computer Science and Engineering 05-Dec-2006 G divyansh_parashar@srmap.edu.in 26 87
+409 AP24110010411 PATHIPAATI VINAY NARASIMHA M B.Tech. Computer Science and Engineering 14-Sep-2006 G vinaynarasimha_pathipaati@srmap.edu.in 17 57
+410 AP24110010412 IMMIDISETTI TERISH CHARAN TEJ M B.Tech. Computer Science and Engineering 16-Sep-2007 G terishcharantej_immidisetti@srmap.edu.in 23 77
+411 AP24110010413 GRANDHI SRI SUJAN M B.Tech. Computer Science and Engineering 05-Oct-2006 G srisujan_grandhi@srmap.edu.in 25 83
+412 AP24110010414 JONNALAGADDA THANUJA F B.Tech. Computer Science and Engineering 23-Oct-2006 G thanuja_jonnalagadda@srmap.edu.in 22 73
+413 AP24110010415 JAYESH KRISHNA M B.Tech. Computer Science and Engineering 15-Nov-2005 G jayeshkrishna_jagdanand@srmap.edu.in 23 77
+414 AP24110010416 LAKSHYA SINGH M B.Tech. Computer Science and Engineering 02-Jul-2006 G lakshya_singh@srmap.edu.in 21 70
+415 AP24110010417 AMANJEETA RATH F B.Tech. Computer Science and Engineering 21-Apr-2006 G amanjeeta_rath@srmap.edu.in 27 90
+416 AP24110010418 KARUMANCHI MOUNA BHARATHI F B.Tech. Computer Science and Engineering 04-Sep-2006 G mounabharathi_karumanchi@srmap.edu.in 26 87
+417 AP24110010419 PARIMI BHARGAV M B.Tech. Computer Science and Engineering 01-Oct-2006 G bhargav_parimi@srmap.edu.in 15 50
+418 AP24110010420 ADIREDDY THANMAYI SAI SIRI F B.Tech. Computer Science and Engineering 02-Aug-2006 B thanmayisaisiri_adireddy@srmap.edu.in 24 80
+419 AP24110010421 VANGARA SRI VIDRUMA F B.Tech. Computer Science and Engineering 02-Jan-2006 B srividruma_vangara@srmap.edu.in 25 83
+420 AP24110010422 PINNINTI HARSHITH SAI DEVI VARA PRASAD M B.Tech. Computer Science and Engineering 10-Aug-2007 G harshith_pinninti@srmap.edu.in 24 80
+421 AP24110010423 AMAN KUMAR M B.Tech. Computer Science and Engineering 27-Sep-2004 G amankumar_nitish@srmap.edu.in 24 80
+422 AP24110010424 PEMMANABOIDI KRISHNA MOHAN M B.Tech. Computer Science and Engineering 15-Sep-2006 G krishnamohan_pemmanaboidi@srmap.edu.in 24 80
+423 AP24110010425 SHIVANGI SHARMA F B.Tech. Computer Science and Engineering 18-Nov-2006 G shivangi_sharma@srmap.edu.in 29 97
+424 AP24110010426 KILARU VARNASH M B.Tech. Computer Science and Engineering 04-Dec-2006 G varnash_kilaru@srmap.edu.in 19 63
+425 AP24110010427 KARUBOTHU SWARAN M B.Tech. Computer Science and Engineering 20-Jul-2006 G swaran_karubothu@srmap.edu.in 22 73
+426 AP24110010428 KAMBAMPATI VENKATA BHARATH M B.Tech. Computer Science and Engineering 24-Jun-2006 G bharath_kambampati@srmap.edu.in 16 53
+427 AP24110010429 GUNTUPALLI GOPI CHAND M B.Tech. Computer Science and Engineering 09-Oct-2004 G gopichand_guntupalli@srmap.edu.in 15 50
+428 AP24110010430 BOLLINA NAGA PRAVEEN M B.Tech. Computer Science and Engineering 31-Jul-2006 G nagapraveen_bollina@srmap.edu.in 21 70
+429 AP24110010431 VODDIRAJU SRIMAN RUTVIK M B.Tech. Computer Science and Engineering 06-Jul-2006 G srimanrutvik_voddiraju@srmap.edu.in 25 83
+430 AP24110010432 KOLLAPUREDDY SRI VENKATA SIVA VYSHNAVI F B.Tech. Computer Science and Engineering 25-Sep-2006 G vyshnavi_kollapureddy@srmap.edu.in 19 63
+431 AP24110010433 GANDHAM ABHINAV BHARADWAJ M B.Tech. Computer Science and Engineering 30-Aug-2007 G abhinavbharadwaj_gandham@srmap.edu.in 23 77
+432 AP24110010434 MOUNIKA NUNNA F B.Tech. Computer Science and Engineering 18-Jul-2007 G mounika_nunna@srmap.edu.in 25 83
+433 AP24110010435 VEJENDLA SUSHMANTH CHOWDARY M B.Tech. Computer Science and Engineering 14-Oct-2005 G sushmanth_vejendla@srmap.edu.in 18 60
+434 AP24110010436 VADDURI AKSHAYA F B.Tech. Computer Science and Engineering 23-Mar-2007 G akshaya_vadduri@srmap.edu.in 26 87
+435 AP24110010437 DONDAPATI MOUNIKA F B.Tech. Computer Science and Engineering 26-Jan-2008 G mounika_dondapati@srmap.edu.in 22 73
+436 AP24110010438 SURAPU YASWANTH M B.Tech. Computer Science and Engineering 01-Sep-2006 G yaswanth_surapu@srmap.edu.in 22 73
+437 AP24110010439 PIYUSH RAJ M B.Tech. Computer Science and Engineering 07-Mar-2005 G piyushraj_uday@srmap.edu.in 27 90
+438 AP24110010440 HARSH RAVINDRA DESAI M B.Tech. Computer Science and Engineering 28-Jan-2005 G harsh_ravindradesai@srmap.edu.in 26 87
+439 AP24110010441 GALLA RAVI KANTH M B.Tech. Computer Science and Engineering 25-Jan-2007 G ravikanth_galla@srmap.edu.in 21 70
+440 AP24110010442 PODILI EBENEZER M B.Tech. Computer Science and Engineering 04-Dec-2006 G ebenezer_podili@srmap.edu.in 22 73
+441 AP24110010443 VEMULA M L V S AASRITHA F B.Tech. Computer Science and Engineering 21-Jun-2007 G aasritha_vemula@srmap.edu.in 22 73
+442 AP24110010444 BODA SREE RAM PRANAV M B.Tech. Computer Science and Engineering 31-May-2007 G sreerampranav_boda@srmap.edu.in 28 93
+443 AP24110010445 MADAM LOHITH M B.Tech. Computer Science and Engineering 14-Nov-2005 G lohith_madam@srmap.edu.in 26 87
+444 AP24110010446 SURYANSH KUMAR M B.Tech. Computer Science and Engineering 03-Jan-2006 G suryansh_kumar@srmap.edu.in 24 80
+445 AP24110010447 DEVARAPALLI SREERAM M B.Tech. Computer Science and Engineering 14-Jul-2006 G sreeram_devarapalli@srmap.edu.in 21 70
+446 AP24110010448 DODDIPATI BOBBY RAJEESH M B.Tech. Computer Science and Engineering 19-Apr-2006 G bobbyrajeesh_doddipati@srmap.edu.in 25 83
+447 AP24110010449 ADAPA VIDYASAGAR M B.Tech. Computer Science and Engineering 28-Jun-2006 G vidyasagar_adapa@srmap.edu.in 21 70
+448 AP24110010450 YARLAGADDA SIRI PRIYA F B.Tech. Computer Science and Engineering 07-Sep-2007 G siripriya_yarlagadda@srmap.edu.in 25 83
+449 AP24110010451 POLISETTI HIMESH SAI HARI NAGH M B.Tech. Computer Science and Engineering 11-Nov-2006 B himeshsaiharinagh_polisetti@srmap.edu.in 18 60
+450 AP24110010452 BORRA JAYA SRI F B.Tech. Computer Science and Engineering 21-Jul-2005 G jayasri_borra@srmap.edu.in 21 70
+451 AP24110010453 UDDARAJU PAVAN VARMA M B.Tech. Computer Science and Engineering 25-Jun-2006 H pavanvarma_uddaraju@srmap.edu.in 25 83
+452 AP24110010454 JARATHKARUNI MANDADA F B.Tech. Computer Science and Engineering 22-Sep-2007 H jarathkaruni_mandada@srmap.edu.in 25 83
+453 AP24110010455 DINTAKURTHI V N S LAKSHMI RISHITHA F B.Tech. Computer Science and Engineering 28-Aug-2006 H lakshmirishitha_dintakurthi@srmap.edu.in 17 57
+454 AP24110010456 KAMINENI BALA SURYA PRAKASH M B.Tech. Computer Science and Engineering 12-Jun-2006 H balasuryaprakash_kamineni@srmap.edu.in 26 87
+455 AP24110010457 TULASI ADITYA CHANDRA M B.Tech. Computer Science and Engineering 11-Aug-2006 H adityachandra_tulasi@srmap.edu.in 11 37
+456 AP24110010458 M THANOJ M B.Tech. Computer Science and Engineering 31-May-2007 H thanoj_m@srmap.edu.in 18 60
+457 AP24110010459 SHAIK JAVED M B.Tech. Computer Science and Engineering 21-Apr-2006 H javed_shaik@srmap.edu.in 25 83
+458 AP24110010460 BIRADA UJWALA SINGH F B.Tech. Computer Science and Engineering 04-Dec-2006 H ujwalasingh_birada@srmap.edu.in 21 70
+459 AP24110010461 SHAIK MOHAMMAD ZAHEER M B.Tech. Computer Science and Engineering 01-May-2007 B mohammadzaheer_shaik@srmap.edu.in 23 77
+460 AP24110010462 VANKAYALA SAI SATWIK M B.Tech. Computer Science and Engineering 17-Mar-2007 H saisatwik_vankayala@srmap.edu.in 23 77
+461 AP24110010463 CHINTALAPUDI DINESH SAI VARDHAN M B.Tech. Computer Science and Engineering 24-Apr-2006 H dinesh_chintalapudi@srmap.edu.in 21 70
+462 AP24110010464 NANDA BHARGAV MULLAMURI M B.Tech. Computer Science and Engineering 18-Dec-2006 H nandabhargav_mullamuri@srmap.edu.in 21 70
+463 AP24110010465 RAUSHAN KUMAR M B.Tech. Computer Science and Engineering 03-Nov-2004 H raushan_kumar@srmap.edu.in 25 83
+464 AP24110010466 CHODAPANEEDI SRI MANIKANTA HARSHA M B.Tech. Computer Science and Engineering 07-Aug-2007 H harsha_chodapaneedi@srmap.edu.in 16 53
+465 AP24110010467 MANDADI DASARADHA RAM M B.Tech. Computer Science and Engineering 26-May-2006 H dasaradharam_mandadi@srmap.edu.in 18 60
+466 AP24110010468 DONDAPATI HARSHITHA F B.Tech. Computer Science and Engineering 28-Feb-2007 H harshitha_dondapati@srmap.edu.in 24 80
+467 AP24110010469 SIDDIREDDY MANOJ REDDY M B.Tech. Computer Science and Engineering 12-Jul-2006 H manoj_siddireddy@srmap.edu.in 22 73
+468 AP24110010470 SATWIK GUPTA M B.Tech. Computer Science and Engineering 01-Aug-2005 H satwik_gupta@srmap.edu.in 25 83
+469 AP24110010471 CHALLAPALLI MANIKANTA ESWAR M B.Tech. Computer Science and Engineering 27-Jan-2005 H manikantaeswar_challapalli@srmap.edu.in 22 73
+470 AP24110010472 ANUGOLU REVANTH M B.Tech. Computer Science and Engineering 29-Oct-2006 H revanth_anugolu@srmap.edu.in 17 57
+471 AP24110010473 KOTHA KISHANTH M B.Tech. Computer Science and Engineering 30-Aug-2006 H kishanth_kotha@srmap.edu.in 21 70
+472 AP24110010474 NELATURI HIRANMAYI SAI SRI F B.Tech. Computer Science and Engineering 28-Feb-2007 H hiranmayisaisri_nelaturi@srmap.edu.in 24 80
+473 AP24110010475 PARCHA VENKATA SAI MANIKANTA M B.Tech. Computer Science and Engineering 23-Dec-2006 H manikanta_parcha@srmap.edu.in 22 73
+474 AP24110010476 KOTA SMITHA VAGDEVI F B.Tech. Computer Science and Engineering 01-Aug-2007 H smithavagdevi_kota@srmap.edu.in 20 67
+475 AP24110010477 BANKA AKSHAYA SOWMYA F B.Tech. Computer Science and Engineering 05-Mar-2007 H akshayasowmya_banka@srmap.edu.in 25 83
+476 AP24110010478 NANDURU NAGA SRAVYA RAJAPRASANNA DEDEEPTHI F B.Tech. Computer Science and Engineering 28-Dec-2005 H nagasravya_nanduru@srmap.edu.in 16 53
+477 AP24110010479 HARSH SINGH RAWAT M B.Tech. Computer Science and Engineering 08-Apr-2006 H harshsingh_rawat@srmap.edu.in 22 73
+478 AP24110010480 VISWANATHAM PAVANA KUMAR M B.Tech. Computer Science and Engineering 26-Jun-2006 H pavanakumar_viswanatham@srmap.edu.in 24 80
+479 AP24110010481 BANDARU YUVAK VENKAT TEJ M B.Tech. Computer Science and Engineering 08-Apr-2007 H yuvakvenkattej_bandaru@srmap.edu.in 17 57
+480 AP24110010482 KHANDE RITISH M B.Tech. Computer Science and Engineering 12-Feb-2007 H ritish_khande@srmap.edu.in 20 67
+481 AP24110010483 RAMISETTY RAGHAVENDRA AKHIL M B.Tech. Computer Science and Engineering 12-Sep-2006 H akhil_ramisetty@srmap.edu.in 16 53
+482 AP24110010484 KARASANI SIDDHARTH REDDY M B.Tech. Computer Science and Engineering 25-Dec-2006 B siddharthre_karasani@srmap.edu.in 19 63
+483 AP24110010485 AKSHITA MANIK CHANDRA F B.Tech. Computer Science and Engineering 01-Jun-2006 H akshita_manikchandra@srmap.edu.in 28 93
+484 AP24110010486 PURVA PATEL M B.Tech. Computer Science and Engineering 09-Aug-2005 H purva_patel@srmap.edu.in 23 77
+485 AP24110010487 VORUGANTI KRISHNA SANKET M B.Tech. Computer Science and Engineering 22-Dec-2006 H krishnasanket_voruganti@srmap.edu.in 23 77
+486 AP24110010488 GOTTAPU ASISH M B.Tech. Computer Science and Engineering 11-Jul-2007 H asish_gottapu@srmap.edu.in 23 77
+487 AP24110010489 ADYASHA MISHRA F B.Tech. Computer Science and Engineering 28-Mar-2006 H adyasha_mishra@srmap.edu.in 26 87
+488 AP24110010490 GUNUPUDI SAI SUDHARSHAN M B.Tech. Computer Science and Engineering 12-May-2007 H saisudharshan_gunupudi@srmap.edu.in 21 70
+489 AP24110010491 KADIYALA NAVYA F B.Tech. Computer Science and Engineering 14-Jan-2007 B navya_kadiyala@srmap.edu.in 24 80
+490 AP24110010492 MUDUNURI PRANEETH VARMA M B.Tech. Computer Science and Engineering 28-Jun-2007 H praneethvarma_mudunuri@srmap.edu.in 23 77
+491 AP24110010493 MARAM SRI NAGA VENKATA MALLIKHARJUNA REDDY M B.Tech. Computer Science and Engineering 10-Sep-2005 H mallikharjuna_maram@srmap.edu.in 17 57
+492 AP24110010494 JONNALAGADDA VARSHITHA CHOWDARY F B.Tech. Computer Science and Engineering 30-Jul-2006 H varshitha_jonnalagadda@srmap.edu.in 22 73
+493 AP24110010495 YADLAPALLI SRAVYA F B.Tech. Computer Science and Engineering 02-Jun-2006 H sravya_yadlapalli@srmap.edu.in 25 83
+494 AP24110010496 KONDETI VENKATA SAI CHARAN M B.Tech. Computer Science and Engineering 04-Apr-2006 B saicharan_kondeti@srmap.edu.in 16 53
+495 AP24110010497 POLURI PAVANI F B.Tech. Computer Science and Engineering 05-Jun-2006 H pavani_poluri@srmap.edu.in 21 70
+496 AP24110010498 SHAIK VASVINIHAL M B.Tech. Computer Science and Engineering 31-Aug-2006 H vasvinihal_shaik@srmap.edu.in 23 77
+497 AP24110010499 RAHUL RAJITH M B.Tech. Computer Science and Engineering 27-Dec-2006 H rahul_rajith@srmap.edu.in 24 80
+498 AP24110010500 AMBATI SHANVIDH M B.Tech. Computer Science and Engineering 14-Dec-2006 H shanvidh_ambati@srmap.edu.in 24 80
+499 AP24110010501 GOTTIMUKKULA NEHANTH REDDY M B.Tech. Computer Science and Engineering 25-Oct-2006 H nehanth_gottimukkula@srmap.edu.in 17 57
+500 AP24110010502 KOMMINENI ANURADHA F B.Tech. Computer Science and Engineering 10-Mar-2007 H anuradha_kommineni@srmap.edu.in 18 60
