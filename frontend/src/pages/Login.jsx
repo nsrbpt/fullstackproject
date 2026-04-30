@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
+import { toast } from 'react-hot-toast';
 import { useLoginMutation } from '../features/apiSlice';
 import { setCredentials } from '../features/authSlice';
 import { Lock, Mail } from 'lucide-react';
@@ -17,9 +18,10 @@ const Login = () => {
     try {
       const userData = await login({ adminId, password }).unwrap();
       dispatch(setCredentials({ token: userData.token }));
+      toast.success('Access Granted. Welcome back.');
       navigate('/');
     } catch (err) {
-      alert('Login failed: ' + (err?.data?.message || err.message));
+      toast.error(err?.data?.message || err.message || 'Authentication failed');
     }
   };
 

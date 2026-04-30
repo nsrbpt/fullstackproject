@@ -28,13 +28,13 @@ const SeatingAllocationSchema = new Schema({
   col: {
     type: Number,
     required: true
-  },
-  qrCodeUrl: {
-    type: String
   }
 }, { timestamps: true });
 
-// Compound unique index to prevent double-seating
+// Compound unique index to prevent double-seating (Student uniqueness)
 SeatingAllocationSchema.index({ examId: 1, studentId: 1 }, { unique: true });
+
+// Compound unique index to prevent seat collision (Physical seat uniqueness)
+SeatingAllocationSchema.index({ examId: 1, hallId: 1, row: 1, col: 1 }, { unique: true });
 
 module.exports = mongoose.model('SeatingAllocation', SeatingAllocationSchema);

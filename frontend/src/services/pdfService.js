@@ -1,5 +1,6 @@
 import jsPDF from 'jspdf';
 import 'jspdf-autotable';
+import QRCode from 'qrcode';
 
 export const generateHallReport = (hallsData, examId) => {
   const doc = new jsPDF();
@@ -63,15 +64,25 @@ export const generateDoorSignage = (hallsData, examId) => {
   doc.save(`Door_Signage_${examId}.pdf`);
 };
 
-export const generateStudentSlips = (allocations, examId) => {
+export const generateStudentSlips = async (allocations, examId) => {
   const doc = new jsPDF();
   let y = 20;
 
-  allocations.forEach((a) => {
+  for (const a of allocations) {
     if (y > 250) {
       doc.addPage();
       y = 20;
     }
+
+    const qrPayload = JSON.stringify({
+      examId,
+      studentId: a.studentId._id,
+      roll: a.studentId.rollNumber,
+      hall: a.hallId.name,
+      seat: a.seatNumber
+    });
+    
+    const qrCodeUrl = await QRCode.toDataURL(qrPayload);
 
     doc.rect(10, y - 5, 190, 40);
     doc.setFontSize(14);
@@ -79,10 +90,14 @@ export const generateStudentSlips = (allocations, examId) => {
     doc.setFontSize(12);
     doc.text(`Name: ${a.studentId.name} (${a.studentId.rollNumber})`, 15, y + 15);
     doc.text(`Department: ${a.studentId.department}`, 15, y + 25);
+<<<<<<< HEAD
     doc.addImage(a.qrCodeUrl, 'PNG', 160, y, 30, 30);
+=======
+    doc.addImage(qrCodeUrl, 'PNG', 160, y, 30, 30);
+>>>>>>> df960e8 (Optimize system: database integrity, performance improvements, and UI/UX enhancements)
     
     y += 50;
-  });
+  }
 
   doc.save(`Student_Slips_${examId}.pdf`);
 };
