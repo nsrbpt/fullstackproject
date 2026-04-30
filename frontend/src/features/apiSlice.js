@@ -1,4 +1,8 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
+<<<<<<< HEAD
+=======
+import { toast } from 'react-hot-toast';
+>>>>>>> df960e8 (Optimize system: database integrity, performance improvements, and UI/UX enhancements)
 import { logout } from './authSlice';
 
 const baseUrl = import.meta.env.VITE_API_BASE_URL || 'http://localhost:5000/api';
@@ -17,6 +21,12 @@ const rawBaseQuery = fetchBaseQuery({
 const baseQueryWithAuth = async (args, api, extraOptions) => {
   const result = await rawBaseQuery(args, api, extraOptions);
   if (result?.error?.status === 401) {
+<<<<<<< HEAD
+=======
+    if (api.getState().auth.isAuthenticated) {
+      toast.error('Session expired. Please log in again.');
+    }
+>>>>>>> df960e8 (Optimize system: database integrity, performance improvements, and UI/UX enhancements)
     api.dispatch(logout());
   }
   return result;
