@@ -79,7 +79,7 @@ export const generateStudentSlips = (allocations, examId) => {
     doc.setFontSize(12);
     doc.text(`Name: ${a.studentId.name} (${a.studentId.rollNumber})`, 15, y + 15);
     doc.text(`Department: ${a.studentId.department}`, 15, y + 25);
-    doc.addImage(a.qrCodeUrl, 'JPEG', 160, y, 30, 30);
+    doc.addImage(a.qrCodeUrl, 'PNG', 160, y, 30, 30);
     
     y += 50;
   });

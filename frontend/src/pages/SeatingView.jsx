@@ -1,8 +1,7 @@
-import { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { useGetAllocationQuery } from '../features/apiSlice';
 import { generateHallReport, generateDoorSignage, generateStudentSlips } from '../services/pdfService';
-import { Loader2, Printer, Download, CheckCircle } from 'lucide-react';
+import { Loader2, Printer, Download } from 'lucide-react';
 
 const SeatingView = () => {
   const { examId } = useParams();
@@ -36,14 +35,6 @@ const SeatingView = () => {
     groupedByHall[hallName].seats.push(a);
   });
 
-  const [isSaved, setIsSaved] = useState(false);
-
-  const handleSave = () => {
-    setIsSaved(true);
-    // The allocation is already in the DB, so we just provide visual confirmation
-    setTimeout(() => setIsSaved(false), 3000);
-  };
-
   return (
     <div className="max-w-7xl mx-auto p-8 space-y-8 bg-gray-50 dark:bg-slate-900">
       {/* Header */}
@@ -54,22 +45,9 @@ const SeatingView = () => {
             <p className="text-sm text-slate-600 dark:text-slate-300">
               Exam ID: <span className="font-mono text-emerald-600 dark:text-emerald-400">{examId}</span>
             </p>
-            {isSaved && (
-              <span className="text-xs bg-emerald-500/10 text-emerald-500 px-2 py-0.5 rounded border border-emerald-500/20 animate-pulse">
-                SAVED TO ARCHIVE
-              </span>
-            )}
           </div>
         </div>
         <div className="flex gap-2">
-          <button
-            onClick={handleSave}
-            className="flex items-center space-x-1 bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2 rounded-md transition-all shadow-lg shadow-emerald-600/20"
-          >
-            <CheckCircle className="w-4 h-4" />
-            <span className="text-sm font-bold">Save Allocation</span>
-          </button>
-          <div className="w-[1px] h-8 bg-slate-700 mx-2 hidden sm:block"></div>
           <button
             onClick={() => generateHallReport(allocations, examId)}
             className="flex items-center space-x-1 bg-slate-700 hover:bg-slate-600 text-white px-3 py-2 rounded-md transition-colors border border-slate-600"

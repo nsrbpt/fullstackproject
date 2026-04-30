@@ -4,7 +4,7 @@ Follow these steps to get the project up and running on your local machine.
 
 ## 1. Prerequisites
 - Ensure you have Node.js installed.
-- Ensure MongoDB is running on your system (or you have a valid MONGO_URI).
+- Ensure you have a MongoDB Atlas cluster and a valid MONGO_URI.
 
 ## 2. Backend Setup
 1. Open a terminal and navigate to the backend folder:
@@ -13,7 +13,7 @@ Follow these steps to get the project up and running on your local machine.
    npm install
 3. Configure Environment:
    Open the '.env' file in the backend folder and ensure the following are set:
-   MONGO_URI=mongodb://localhost:27017/exam_seating_db
+   MONGO_URI=mongodb+srv://<username>:<password>@<cluster-url>/exam_seating_db?retryWrites=true&w=majority
    JWT_SECRET=your_secret_key_here
    PORT=5000
 4. Seed the Database (Optional but recommended for first run):
@@ -22,6 +22,7 @@ Follow these steps to get the project up and running on your local machine.
 5. Start the Server:
    npm start
    (The server will run at http://localhost:5000)
+   You should see: MongoDB Connected: <atlas-host>
 
 ## 3. Frontend Setup
 1. Open a NEW terminal window and navigate to the frontend folder:
