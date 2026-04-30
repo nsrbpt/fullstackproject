@@ -6,6 +6,7 @@ import Login from './pages/Login';
 import SeatingView from './pages/SeatingView';
 import Upload from './pages/Upload';
 import SeatingList from './pages/SeatingList';
+import HallsAdmin from './pages/HallsAdmin';
 
 function App() {
   const isAuthenticated = useSelector((state) => state.auth.isAuthenticated);
@@ -19,6 +20,7 @@ function App() {
         <Route element={isAuthenticated ? <DashboardLayout /> : <Navigate to="/login" />}>
           <Route path="/" element={<Dashboard />} />
           <Route path="/upload" element={<Upload />} />
+          <Route path="/halls" element={<HallsAdmin />} />
           <Route path="/seating" element={<SeatingList />} />
           <Route path="/seating/:examId" element={<SeatingView />} />
         </Route>
