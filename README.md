@@ -1,267 +1,428 @@
-# Exam Seating Allocation System
 
-Full-stack MERN application for automated exam seating allocation with department-aware interleaving, column-wise zig-zag seating, JWT-protected APIs, and PDF export.
 
-## 1. MongoDB Migration: Docker to MongoDB Atlas
+🎓 Exam Seating Allocation System
 
-This project already reads database settings from `MONGO_URI`, so no backend code changes are required for Atlas migration.
+A full-stack MERN application for automated exam seating allocation with department-aware interleaving, column-wise zig-zag seating, JWT-protected APIs, and PDF export.
 
-### 1.1 Create Atlas Cluster
-1. Go to MongoDB Atlas and create a project.
-2. Create a cluster (M0 free tier is enough for development).
-3. Create a database user with password authentication.
-4. In Network Access, add your current IP (or `0.0.0.0/0` temporarily for testing).
-5. Click Connect -> Drivers -> copy the Node.js connection string.
 
-### 1.2 Update Backend Environment
-Edit `backend/.env`:
+---
 
-```env
+🚀 1. MongoDB Migration: Docker → MongoDB Atlas
+
+This project already reads database settings from MONGO_URI, so no backend code changes are required for Atlas migration.
+
+1.1 Create Atlas Cluster
+
+1. Go to MongoDB Atlas and create a project
+
+
+2. Create a cluster (M0 free tier is sufficient)
+
+
+3. Create a database user with password authentication
+
+
+4. In Network Access, add your IP (or 0.0.0.0/0 for testing)
+
+
+5. Click Connect → Drivers → Node.js and copy connection string
+
+
+
+
+---
+
+1.2 Update Backend Environment
+
+Edit backend/.env:
+
 PORT=5000
 MONGO_URI=mongodb+srv://<username>:<password>@<cluster-url>/exam_seating_db?retryWrites=true&w=majority
 JWT_SECRET=supersecret_jwt_key_exam_seating_admin
-```
 
 Notes:
-- URL-encode special characters in password.
-- Keep `JWT_SECRET` strong in production.
-- Database name can stay `exam_seating_db`.
 
-### 1.3 Stop Local Docker Mongo (Optional)
-If you were using Docker Mongo:
+URL-encode special characters in password
 
-```bash
+Keep JWT_SECRET strong in production
+
+Database name: exam_seating_db
+
+
+
+---
+
+1.3 Stop Local Docker Mongo (Optional)
+
 docker stop exam-mongo
 docker rm exam-mongo
-```
 
-### 1.4 Verify Atlas Connection
-From `backend`:
 
-```bash
+---
+
+1.4 Verify Atlas Connection
+
+cd backend
 npm start
-```
 
-Expected server log:
+Expected output:
 
-```text
 MongoDB Connected: <atlas-hostname>
 Server running on port 5000
-```
 
-## 2. System Architecture
 
-### 2.1 High-Level Flow
-1. React frontend sends API requests via RTK Query.
-2. Express backend validates/admin-authenticates requests.
-3. Services perform business logic (auth, upload, allocation).
-4. Mongoose models persist/retrieve data from MongoDB Atlas.
-5. Allocation service generates QR payload per seat and stores allocation records.
-6. Frontend renders seating grids and exports reports as PDF.
+---
 
-### 2.2 Components
-- Frontend (`frontend`): React + Vite + Redux Toolkit + RTK Query.
-- Backend (`backend`): Express API, route-level services.
-- Database: MongoDB Atlas via `mongoose.connect(process.env.MONGO_URI)`.
-- Auth: JWT tokens, `Authorization: Bearer <token>` header.
+🏗️ 2. System Architecture
 
-### 2.3 Core Data Models
-- `AdminUser`: admin identity and bcrypt password hash.
-- `Student`: roll number, name, department.
-- `Hall`: hall name, rows, cols, capacity.
-- `SeatingAllocation`: examId + student + hall + seat coordinates + QR URL.
+2.1 High-Level Flow
 
-## 3. Algorithms Used
+1. React frontend sends API requests via RTK Query
 
-### 3.1 Department Interleaving
-Purpose: reduce adjacent clustering of students from the same department.
 
-Process:
-1. Group students by `department`.
-2. Round-robin merge across department queues.
-3. Resulting `mergedStudents` list alternates departments as much as possible.
+2. Express backend authenticates requests (JWT)
 
-Approximate complexity:
-- Time: $O(n)$
-- Space: $O(n)$
 
-### 3.2 Column-Wise Zig-Zag Seat Assignment
-Purpose: fill halls in vertical sweep while alternating direction each column.
+3. Services handle business logic
 
-Process per hall:
-1. Iterate columns from left to right.
-2. Odd column: assign rows top-to-bottom.
-3. Even column: assign rows bottom-to-top.
-4. Continue until all students are assigned or hall capacity is exhausted.
 
-Seat label format:
-- `R<row>C<col>` (example: `R3C2`)
+4. Mongoose interacts with MongoDB Atlas
 
-Approximate complexity:
-- Time: $O(n)$ for assignment itself
-- Space: $O(n)$ for allocation records
 
-### 3.3 Conflict Check
-Before assignment:
-- Compute total capacity $= \sum hall.capacity$
-- If total students $>$ total capacity, allocation is aborted with a clear error message.
+5. Allocation service assigns seats + generates QR payload
 
-## 4. Setup and Run Instructions
 
-## 4.1 Prerequisites
-- Node.js 18+
-- npm 9+
-- MongoDB Atlas cluster + credentials
+6. Frontend displays seating and exports PDF
 
-### 4.2 Backend Setup
-```bash
+
+
+
+---
+
+2.2 Components
+
+Layer	Tech Stack
+
+Frontend	React + Vite + Redux Toolkit + RTK Query
+Backend	Node.js + Express
+Database	MongoDB Atlas
+Auth	JWT
+
+
+
+---
+
+2.3 Core Data Models
+
+AdminUser → admin login + password hash
+
+Student → roll number, name, department
+
+Hall → hall name, rows, cols, capacity
+
+SeatingAllocation → examId, student, hall, seat, QR
+
+
+
+---
+
+⚙️ 3. Algorithms Used
+
+3.1 Department Interleaving
+
+Goal: Avoid same-department clustering
+
+Steps:
+
+1. Group students by department
+
+
+2. Apply round-robin merge
+
+
+3. Generate balanced student order
+
+
+
+Complexity:
+
+Time: O(n)
+
+Space: O(n)
+
+
+
+---
+
+3.2 Column-Wise Zig-Zag Seating
+
+Goal: Efficient seating distribution
+
+Steps:
+
+1. Traverse columns left → right
+
+
+2. Odd columns → top → bottom
+
+
+3. Even columns → bottom → top
+
+
+
+Seat Format:
+
+R<row>C<col>
+Example: R3C2
+
+Complexity:
+
+Time: O(n)
+
+Space: O(n)
+
+
+
+---
+
+3.3 Conflict Check
+
+Before allocation:
+
+Total Capacity = sum(hall.capacity)
+
+If students > capacity → ERROR
+
+
+---
+
+🛠️ 4. Setup & Run Instructions
+
+4.1 Prerequisites
+
+Node.js 18+
+
+npm 9+
+
+MongoDB Atlas account
+
+
+
+---
+
+4.2 Backend Setup
+
 cd backend
 npm install
-```
 
-Create/update `backend/.env`:
+Create .env:
 
-```env
 PORT=5000
 MONGO_URI=mongodb+srv://<username>:<password>@<cluster-url>/exam_seating_db?retryWrites=true&w=majority
 JWT_SECRET=supersecret_jwt_key_exam_seating_admin
 ADMIN_SETUP_KEY=<one-time-bootstrap-key>
-```
 
-Security note:
-- Keep `ADMIN_SETUP_KEY` empty in production after initial admin bootstrap to disable open registration.
+Run seed (first time):
 
-Optional seed (recommended first run):
-
-```bash
 npm run seed
-```
 
-Start backend:
+Start server:
 
-```bash
 npm start
-```
 
-Backend URL: `http://localhost:5000`
+Backend URL:
+👉 http://localhost:5000
 
-### 4.3 Frontend Setup
-```bash
+
+---
+
+4.3 Frontend Setup
+
 cd frontend
 npm install
 npm run dev
-```
 
-Optional frontend environment (`frontend/.env`):
+Optional .env:
 
-```env
 VITE_API_BASE_URL=http://localhost:5000/api
-```
 
-Frontend URL: `http://localhost:5173`
+Frontend URL:
+👉 http://localhost:5173
 
-### 4.4 Default Seed Credentials
-- Admin ID: `17903`
-- Password: `040807`
 
-Alternative custom user (if created manually):
-- Admin ID: `srinivas`
-- Password: `12334`
+---
 
-### 4.5 Basic Usage Flow
-1. Login with admin credentials.
-2. Upload student data (`.txt` or `.xlsx`) in Data Ingestion.
-3. Generate allocation by providing an `examId`.
-4. Open Seating Grids to inspect/export reports.
+4.4 Default Credentials
 
-## 5. Project File Structure
+Admin ID: 17903
 
-```text
+Password: 040807
+
+
+Alternate:
+
+Admin ID: srinivas
+
+Password: 12334
+
+
+
+---
+
+4.5 Usage Flow
+
+1. Login
+
+
+2. Upload student data (.txt / .xlsx)
+
+
+3. Generate allocation using examId
+
+
+4. View seating grid & export PDF
+
+
+
+
+---
+
+📁 5. Project Structure
+
 fullstackproject/
-├── datasetofstudents.txt
-├── README.md
-├── RUN_INSTRUCTIONS.txt
 ├── backend/
 │   ├── index.js
-│   ├── package.json
 │   └── src/
-│       ├── api-gateway/
-│       │   └── middleware/
-│       │       └── auth.middleware.js
 │       ├── models/
-│       │   ├── AdminUser.js
-│       │   ├── Hall.js
-│       │   ├── SeatingAllocation.js
-│       │   └── Student.js
-│       ├── scripts/
-│       │   ├── add-user.js
-│       │   ├── reset.js
-│       │   └── seed.js
 │       ├── services/
-│       │   ├── allocation-service/
-│       │   │   ├── allocation.controller.js
-│       │   │   └── allocation.routes.js
-│       │   ├── auth-service/
-│       │   │   ├── auth.controller.js
-│       │   │   └── auth.routes.js
-│       │   └── upload-service/
-│       │       ├── upload.controller.js
-│       │       └── upload.routes.js
+│       ├── scripts/
 │       └── utils/
-│           └── db.js
 └── frontend/
-		├── eslint.config.js
-		├── index.html
-		├── package.json
-		├── README.md
-		├── vite.config.js
-		├── public/
-		└── src/
-				├── App.css
-				├── App.jsx
-				├── index.css
-				├── main.jsx
-				├── assets/
-				├── components/
-				│   └── common/
-				│       └── DashboardLayout.jsx
-				├── features/
-				│   ├── apiSlice.js
-				│   ├── authSlice.js
-				│   └── store.js
-				├── pages/
-				│   ├── Dashboard.jsx
-				│   ├── Login.jsx
-				│   ├── SeatingList.jsx
-				│   ├── SeatingView.jsx
-				│   └── Upload.jsx
-				└── services/
-						└── pdfService.js
-```
+    ├── src/
+    │   ├── components/
+    │   ├── pages/
+    │   ├── features/
+    │   └── services/
 
-## 6. API Overview
 
-- `POST /api/auth/login`: admin authentication
-- `POST /api/auth/register`: bootstrap admin creation (requires `x-setup-key` header)
-- `GET /api/health`: health check
-- `POST /api/upload/students`: ingest students file
-- `POST /api/allocation/generate`: generate seating for `examId`
-- `GET /api/allocation/:examId`: fetch allocation for one exam
-- `GET /api/allocations/all`: fetch all allocations (admin)
-- `GET /api/stats`: dashboard stats (admin)
-- `DELETE /api/allocation/:examId`: delete one exam allocation
-- `GET /api/halls`: list halls
-- `POST /api/halls`: create hall
-- `PUT /api/halls/:id`: update hall
-- `DELETE /api/halls/:id`: delete hall (blocked if allocations exist)
+---
 
-## 7. Troubleshooting
+🔗 6. API Overview
 
-- `MongoNetworkError` / timeout:
-	- Verify Atlas IP allowlist and credentials.
-- `bad auth : Authentication failed`:
-	- Check username/password and URL encoding.
-- `Allocation already exists for this Exam ID`:
-	- Use a new `examId` or delete old allocation first.
-- Capacity conflict error:
-	- Increase number of halls/capacity before generating.
+Method	Endpoint	Description
+
+POST	/api/auth/login	Admin login
+POST	/api/auth/register	Create admin
+GET	/api/health	Health check
+POST	/api/upload/students	Upload students
+POST	/api/allocation/generate	Generate seating
+GET	/api/allocation/:examId	Get seating
+GET	/api/allocations/all	All allocations
+GET	/api/stats	Dashboard stats
+DELETE	/api/allocation/:examId	Delete allocation
+GET	/api/halls	List halls
+POST	/api/halls	Add hall
+PUT	/api/halls/:id	Update hall
+DELETE	/api/halls/:id	Delete hall
+
+
+
+---
+
+🧪 7. Troubleshooting
+
+MongoDB Connection Error
+
+Check IP whitelist
+
+Verify credentials
+
+
+Authentication Failed
+
+Check username/password encoding
+
+
+Allocation Exists Error
+
+Use new examId or delete old
+
+
+Capacity Error
+
+Increase halls or capacity
+
+
+
+---
+
+🎥 8. Demo & Documentation
+
+🎬 Explanation Video
+
+Complete walkthrough of:
+
+System features
+
+Seating algorithm
+
+UI demo
+
+
+🔗 https://drive.google.com/drive/folders/1VRY7BX5OCpsBK9b1uG64PUYNwq1cEw8e
+
+
+---
+
+📄 Project Report
+
+Includes:
+
+Architecture
+
+Algorithms
+
+Implementation
+
+Screenshots
+
+
+🔗 https://drive.google.com/drive/folders/1pLXWI4hfdwkkAPrWU5ujZXizlZPKIxIp
+
+
+---
+
+🌟 9. Key Features
+
+✅ Automated seating allocation
+
+✅ Department-wise interleaving
+
+✅ Zig-zag seat optimization
+
+✅ JWT-secured admin system
+
+✅ Excel/TXT upload support
+
+✅ PDF export
+
+✅ MongoDB Atlas integration
+
+
+
+---
+
+📌 10. Future Enhancements
+
+Multi-exam scheduling
+
+AI-based seating optimization
+
+Real-time dashboard analytics
+
+QR-based attendance tracking
+
+Mobile app version
+
+
+
